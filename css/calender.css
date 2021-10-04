@@ -38,7 +38,7 @@
     background-color: #333;
     height: 41px;
     margin-top: 70px;
-    margin-left: 78%;
+    margin-left: 50%;
     overflow: hidden;
     position: relative;
     border-radius: 30px;
@@ -70,9 +70,9 @@
     width: 100%;
   }
   #calendar{
-      margin: -61px 5%;
+      margin: -61px 2.5%;
       position: absolute;
-      width: 90%;
+      width: 95%;
   }
   .search-field:placeholder-shown {
     color: rgb(255, 255, 255);
@@ -348,10 +348,10 @@
       display: none;
       min-height: 40px;
       max-height: 329px;
-      overflow: auto;
+      overflow: scroll;
       border-top: 1px solid #f4f4f4;
       z-index: 12 !important;
-      margin: 6px 67%;
+      margin: 6px 40%;
     position:absolute;
   }
   .dialog.open {

@@ -142,7 +142,7 @@ $(document).ready(function () {
     slotDuration: "01:00:00",
     slotLabelInterval: "01:00:00",
     snapDuration: "00:15:00",
-    contentHeight: 1100,
+    contentHeight: 650,
     scrollTime: "8:00:00",
     axisFormat: 'h:mm a',
     timeFormat: 'h:mm A()',
