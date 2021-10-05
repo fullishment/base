@@ -91,6 +91,17 @@
                             <div class="group">
                                 <div class="qnaList">
                                     <table class="scmL" border="1">
+                                        <thead class="scmLT">
+                                            <tr>
+                                                <th>번호</th>
+                                                <th>제목</th>
+                                                <th>등록일</th>
+                                                <th>기능</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <!-- <table class="scmL" border="1">
                                         <tr class="scmLT">
                                             <th>번호</th>
                                             <th>제목</th>
@@ -151,76 +162,74 @@
                                                 <button class="DelBtn">삭제
                                             </td>
                                         </tr>
-                                    </table>
+                                    </table> -->
                                 </div>
                             </div>
                         </div>
                         <div class="scm2-htm">
                             <label for="user" class="sclabel">1:1 질문 관리</label>
                             <div class="group">
-                                <thead>
-
-                                </thead>
-                                <tbody>
-
-                                </tbody>
                                <div class="qnaList2">
-                                    <table class="scmL" border="1">
-                                        <tr class="scmLT">
+                                <table class="scmL" border="1">
+                                    <thead class="scmLT">
+                                        <tr>
                                             <th>번호</th>
                                             <th>제목</th>
                                             <th>등록일</th>
                                             <th>기능</th>
                                         </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <a href="file:///C:/base/coronagram/view/admin_qna/admin_Qna_answer.html"><button class="HaveA">답변하기</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="OKA">답변완료
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="OKA">답변완료
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="OKA">답변완료
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>5</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="OKA">답변완료
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="OKA">답변완료
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    </thead>
+                                    <tbody>
+                                        <!-- <tr>
+                                        <th>1</th>
+                                        <td><a href="#">Q. 왜이리 어렵나요?</a></td>
+                                        <td>2021-09-16</td>
+                                        <td>
+                                            <a href="file:///C:/base/coronagram/view/admin_qna/admin_Qna_answer.html"><button class="HaveA">답변하기</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td><a href="#">Q. 왜이리 어렵나요?</a></td>
+                                        <td>2021-09-16</td>
+                                        <td>
+                                            <button class="OKA">답변완료
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td><a href="#">Q. 왜이리 어렵나요?</a></td>
+                                        <td>2021-09-16</td>
+                                        <td>
+                                            <button class="OKA">답변완료
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td><a href="#">Q. 왜이리 어렵나요?</a></td>
+                                        <td>2021-09-16</td>
+                                        <td>
+                                            <button class="OKA">답변완료
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td><a href="#">Q. 왜이리 어렵나요?</a></td>
+                                        <td>2021-09-16</td>
+                                        <td>
+                                            <button class="OKA">답변완료
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>6</th>
+                                        <td><a href="#">Q. 왜이리 어렵나요?</a></td>
+                                        <td>2021-09-16</td>
+                                        <td>
+                                            <button class="OKA">답변완료
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                                </table>
                                 </div>
                             </div>
                         </div>
@@ -230,6 +239,22 @@
         </div>
     </main>
         <script src="../../resources/script/admin_qna/admin_Qna.js"></script>
+        <script>
+            //목록 그리기
+      function drawList(list){
+         var html ="";
+         
+         for(var data of list){
+            html += "<tr no=\""+NO+"\">";
+            html += "<td>"+TITLE+"</td>";
+            html += "<td>"+DATE+"</td>";
+            html += "<td>"+FUNC+"</td>";
+         }
+         
+         $("tbody").html(html);
+      }
+
+        </script>
     </body>
     
     </html>

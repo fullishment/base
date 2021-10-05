@@ -354,6 +354,9 @@
             opacity: 1;
         }
         /* main */
+        a {
+            text-decoration: none;
+        }
         .sc {
             max-width: 800px;
             margin: auto;

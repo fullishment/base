@@ -10,29 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <style>
-        .scmL2 {
-            float: left;
-            border: 0;
-            width: 350px;
-            height: 320px;
-        }
-        .scmL3 {
-            float: right;
-            border: 0;
-            width: 350px;
-            height: 320px;
-        }
-        .scmL2T {
-            width: 315px;
-            margin-left: 10px;
-        }
-        textarea {
-            margin-left: 15px;
-        }
-        .submit, .cancel {
-            float: right;
-            margin-top: 10px;
-        }
+        
     </style>
 </head>
 <body>
@@ -105,75 +83,14 @@
             </div>
             <div class="sc-wrap">
                 <div class="sc-html">
-                    <input id="tab-1" type="radio" name="tab" class="scm1" ><label for="tab-1" class="tab">FAQ 관리</label>
+                    <input id="tab-1" type="radio" name="tab" class="scm1" ><label for="tab-1" class="tab"><a href="file:///C:/base/coronagram/view/admin_qna/admin_qna.html">FAQ 관리</a></label>
                     <input id="tab-2" type="radio" name="tab" class="scm2" checked><label for="tab-2" class="tab">Q&A관리</label>
                     <div class="sc-form">
                         <div class="scm1-htm">
                             <label for="user" class="sclabel">자주 묻는 질문 관리</label>
                             <div class="group">
                                 <div class="qnaList">
-                                    <table class="scmL" border="1">
-                                        <tr class="scmLT">
-                                            <th>번호</th>
-                                            <th>제목</th>
-                                            <th>등록일</th>
-                                            <th>기능</th>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="UpBtn">수정
-                                                <button class="DelBtn">삭제
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="UpBtn">수정
-                                                <button class="DelBtn">삭제
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="UpBtn">수정
-                                                <button class="DelBtn">삭제
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>4</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="UpBtn">수정
-                                                <button class="DelBtn">삭제
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>5</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="UpBtn">수정
-                                                <button class="DelBtn">삭제
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td><a href="#">Q. 왜이리 어렵나요?</a></td>
-                                            <td>2021-09-16</td>
-                                            <td>
-                                                <button class="UpBtn">수정
-                                                <button class="DelBtn">삭제
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -185,16 +102,19 @@
                                     <h3>User 질문</h3>
                                     <div class="scmL2">
                                         <div>제목</div>
+
                                         <input type="text" class="scmL2T">
                                         <div>질문</div>
-                                        <textarea cols="42" rows="13"></textarea>
+                                        <textarea cols="47" rows="13"></textarea>
                                     </div>
                                 </div>
                                 <div class="scmL3">
                                     <div>답변하기</div>
-                                    <textarea cols="42" rows="16"></textarea> <br>
-                                    <button class="cancel"><a href="file:///C:/base/coronagram/view/admin_qna/admin_qna.html">취소</a>
-                                    <button class="submit">저장
+                                    <textarea cols="47" rows="16"></textarea> <br>
+                                    <div class="btnForm">
+                                        <button href="#" type="button" class="add_btn">작성</button>
+                                        <button href="#" type="button" class="cancel_btn"><a href="file:///C:/base/coronagram/view/admin_qna/admin_qna.html">취소</a></button>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -205,6 +125,22 @@
         </div>
     </main>
         <script src="../../resources/script/admin_qna/admin_Qna.js"></script>
+        <script>
+            //목록 그리기
+      function drawList(list){
+         var html ="";
+         
+         for(var data of list){
+            html += "<tr no=\""+NO+"\">";
+            html += "<td>"+TITLE+"</td>";
+            html += "<td>"+DATE+"</td>";
+            html += "<td>"+FUNC+"</td>";
+         }
+         
+         $("tbody").html(html);
+      }
+
+        </script>
     </body>
     
     </html>
