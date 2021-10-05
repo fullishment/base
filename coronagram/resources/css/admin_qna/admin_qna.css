@@ -433,3 +433,10 @@ transform:rotate(0);
 textarea{
     resize:none;
 }
+/* 반응형 */
+@media (max-width: 770px) {
+    .group {
+        min-height: 700px;
+        max-width: 400px;
+    }
+}
