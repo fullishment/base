@@ -471,7 +471,7 @@
             margin-left: 5px;
         }
         .scImg {
-            background-image: url(img/question.png);
+            background-image: url(../../images/question.png);
             background-size: cover;
             float: right;
             width: 260px;
