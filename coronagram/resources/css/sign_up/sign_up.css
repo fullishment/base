@@ -16,7 +16,8 @@ html {
   }
   .box-form {
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
+    height: 90%;
     background: #FFFFFF;
     border-radius: 10px;
     overflow: hidden;
@@ -25,16 +26,7 @@ html {
     align-items: stretch;
     box-shadow: 0 0 20px 6px #090b6f85;
     position: relative;
-    top: 100px;
-  }
-
-  @media (max-width: 810px) {
-    .box-form {
-      flex-flow: wrap;
-      text-align: center;
-      align-content: center;
-      align-items: center;
-    }
+    top: 50px;
   }
 
   .box-form div {
@@ -45,7 +37,7 @@ html {
     color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("./instagram_bg.jpg");
+    background-image: url("../../resources/images/instagram_bg.jpg");
     overflow: hidden;
   }
 
@@ -59,7 +51,7 @@ html {
   }
 
   .box-form .left .overlay h1 {
-    font-size: 7vmax;
+    font-size: 5vmax;
     line-height: 1;
     font-weight: 900;
     margin-top: 40px;
@@ -92,13 +84,6 @@ html {
     
   }
 
-  @media (max-width: 810px) {
-    .box-form .right {
-      width: 100%;
-      margin-left: -5% !important;
-    }
-  }
-
   .box-form .right h5 {
     font-size: 6vmax;
     line-height: 0;
@@ -111,7 +96,7 @@ html {
   }
   .box-form .right .inputs {
     overflow: hidden;
-    margin-left: 15%;
+    margin-left: 25%;
   }
 
   .box-form .right input {
@@ -246,3 +231,23 @@ html {
     color: #49c628;
     font-size: 10pt;
   }
+  .find_btn{
+    display: inline-block;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background: #ffc107;
+}
+.find_btn:hover{
+  opacity: .8;
+}
+.post_num{
+  width: 155px;
+}
