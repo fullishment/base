@@ -51,7 +51,7 @@ header a {
 
 .cm_dot {
     right: 35px;
-    background-image: url(img/dot.png);
+    background-image: url(../../images/dot.png);
     width: 30px;
     height: 30px;
 }
