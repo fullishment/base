@@ -490,7 +490,40 @@
         }
         .qnaBtn {
             float: right;
-            margin: 10px;
+        }
+        .add_btn {
+            display: inline-block;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: #0d6efd;
+        }
+        .cancel_btn {
+            display: inline-block;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: gray;
+        }
+        .add_btn:hover{
+            opacity: .8;
+        }
+        .cancel_btn:hover {
+            opacity: .8;
         }
         
 /* 문의내역 */
@@ -511,13 +544,51 @@
         .check1{
             color: green;
         }
+        .cancel_btn {
+            float: right;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: gray;
+        }
+        .scmL2 {
+            float: left;
+            width: 350px;
+            height: 320px;
+        }
+        .scmL3 {
+            float: left;
+            width: 350px;
+            height: 320px;
+        }
+        .scmL2T {
+            width: 315px;
+            margin-left: 10px;
+        }
+        textarea {
+            margin-left: 15px;
+        }
+        .AsCon {
+            margin-top: 30px;
+        }
 
 /* 반응형 */
-        @media (max-width: 980px) {
-            .scImg {
-                display: none;
-            }
-            .scMain {
-                width: 100%;
-            }
-        }
+@media (max-width: 770px) {
+    .scImg {
+        display: none;
+    }
+    .scMain {
+        width: 100%;
+    }
+    .group {
+        min-height: 700px;
+        max-width: 400px;
+    }
+}
