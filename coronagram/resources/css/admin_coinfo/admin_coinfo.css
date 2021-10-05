@@ -1,0 +1,157 @@
+
+/* main */
+.sc {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 5%;
+    background: white;
+    padding: 10px;
+}
+.scHead {
+    padding-bottom: 10px;
+}
+
+.scName {
+    font-size: 15pt;
+    color: gray;
+}
+
+.sc-html .scm1-htm,
+.sc-html .scm2-htm{
+top:10px;
+left:0;
+right:0;
+bottom:0;
+position:absolute;
+transform:rotateY(180deg); /*다른창 가림*/
+backface-visibility:hidden; /*다른창 가림*/
+/* transition:all .4s linear; 빙글도는액션 */
+}
+.sc-html .scm1,
+.sc-html .scm2,
+.sc-form .group .check{
+display:none;
+}
+
+.sc-html .tab{
+display:inline-block;
+border-bottom:2px solid transparent;
+}
+
+#tab-1{
+float: left;
+}
+.sc-html .scm1:checked + .tab,
+.sc-html .scm2:checked + .tab{
+color:grey;
+border-color:#1161ee;
+}
+.sc-form{
+min-height:25px;
+position:relative;
+perspective:1000px;
+transform-style:preserve-3d;
+}
+.sc-form .group .sclabel,
+.sc-form .group .input,
+.sc-form .group .button{
+display:inline-block;
+}
+
+.sc-html .scm1:checked + .tab + .scm2 +  .tab +.sc-form .scm1-htm{
+transform:rotate(0);
+}
+.sc-html .scm2:checked  + .tab + .sc-form .scm2-htm{
+transform:rotate(0);
+}
+.scm {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+.group {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    min-height: 400px;
+    min-width: 800px;
+}
+.scMain {
+    width: 60%;
+}
+
+/* Q&A */
+
+.QnaTitle {
+    display: inline-block;
+}
+.QnaTitle2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.QTI, .QCI{
+    width: 100%;
+    border: 1px solid rgb(148, 145, 145);
+}
+.QTI {
+    height: 30px;
+    width: 300px;
+}
+textarea {
+    resize: none;
+}
+.QCI{
+    height: 250px;
+}
+
+/* 작성버튼 */
+.qnaBtn1 {
+    display: inline-block;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: #0d6efd;
+            /* 추가 */
+            float: right;
+            margin: 10px;
+}
+
+/* 취소버튼 */
+.qnaBtn2 {
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background: gray;
+    /* 추가 */
+    float: right;
+    margin: 10px;
+}
+
+
+
+/* 반응형 */
+@media (max-width: 980px) {
+    .scImg {
+        display: none;
+    }
+    .scMain {
+        width: 100%;
+    }
+}
