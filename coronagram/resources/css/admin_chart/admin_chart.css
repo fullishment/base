@@ -779,7 +779,7 @@ a:active {
   margin-bottom: 16px;
   box-shadow: 1px 1px 2px 0 #CCCCCC;
   padding: 20px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(26, 25, 25, 0.445);
   background: white !important;
 }
 
