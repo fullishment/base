@@ -243,7 +243,7 @@
             width: 20px;
             height: 20px;
             background-size: cover;
-            background-image: url(img/logout.png);
+            background-image: url(../../images/logout.png);
         }
 
         a.cm_logout {
@@ -269,7 +269,7 @@
         /* 메뉴아이콘 */
         .cm_map, .cm_info, .cm_cam, .cm_user, .cm_qna {
             position: absolute;
-            background-image: url(img/map.png);
+            background-image: url(../../images/map.png);
             background-size: cover;
             width: 20px;
             height: 20px;
@@ -277,19 +277,19 @@
         }
 
         .cm_info {
-            background-image: url(img/info.png);
+            background-image: url(../../images/info.png);
         }
 
         .cm_cam {
-            background-image: url(img/cam.png);
+            background-image: url(../../images/cam.png);
         }
 
         .cm_user {
-            background-image: url(img/user.png);
+            background-image: url(../../images/user.png);
         }
 
         .cm_qna {
-            background-image: url(img/msk.png);
+            background-image: url(../../images/msk.png);
         }
 
         /* 메뉴 화살표 */

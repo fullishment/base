@@ -25,7 +25,7 @@ input[type="file"] {
 }
 .card{
     width: 500px;
-    height: 1100px;
+    height: 1000px;
     padding: 15px;
     /* margin-top: 56px; */
     border-radius: 25px;
@@ -43,6 +43,7 @@ input[type="file"] {
     -webkit-animation: open .5s;
     animation: open .5s;
     font-family: "Noto Sans KR", sans-serif;
+    
 }
 .input_area{
     margin-left:70px;
@@ -123,6 +124,22 @@ p{
 .post_num{
     width: 57%;
 }
+
+/* 드랍박스 */
+#dropbox{
+  width: 60%;
+  border-radius: 15px;
+  border: 2px solid #b7b7b7;
+  padding: 5px 5px 5px 10px;
+  transition: 0.2s;
+}
+
+#dropbox:focus{
+  outline: none;
+  border: 2px solid #64d488;
+}
+
+/* 버튼 */
 .edit_btn{
   display: inline-block;
   color: white;
@@ -176,3 +193,8 @@ margin: 10px 0px 0px 110px;
 .find_btn:hover{
     opacity: .8;
   }
+
+
+ 
+   
+   
