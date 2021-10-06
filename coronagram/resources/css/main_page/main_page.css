@@ -214,8 +214,8 @@ a {
 
   /* 커스텀 */
   .con {
-    max-width: 1440px;
-    margin-top: 30px;
+    max-width: 100%;
+    margin-top: 10px;
   }
 
   .con-min-width {
@@ -675,7 +675,7 @@ a {
     clear: both;
     width: 100%;
     height: 400px;
-    background: url('https://i.postimg.cc/7qGSvRZL/2324324122133.png')no-repeat;
+    background: url('../../images/shop1.jpg')no-repeat;
     background-position: left;
     background-size: cover;
   }
@@ -1637,4 +1637,7 @@ a {
     stroke: #e5554e;
     stroke-dasharray: 430;
     stroke-dashoffset: 430 - 20
+  }
+  .txt-tt{
+    display:inline-block;
   }

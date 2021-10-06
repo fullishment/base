@@ -52,195 +52,7 @@ const productDetails = [
       "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
   },
   {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  },
-  {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  }, {
-    name: "iPad Pro",
-    price: 71900,
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
-    qty: 25,
-    heading: "Your next computer is not a computer",
-    des:
-      "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
-  }, {
-    name: "iPad Pro",
+    name: "iPad Pro3",
     price: 71900,
     imageUrl:
       "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
@@ -249,7 +61,6 @@ const productDetails = [
     des:
       "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro."
   }
-
 ];
 
 
@@ -471,16 +282,7 @@ function CartItems(cartItem = {}) {
 function Banner() {
   return `
 <div class='banner'>
-  <ul class="box-area">
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  </ul>
   <div class='main-cart'>${DisplayProducts()}</div>
-
   <div class='nav'>
     <button onclick='sideNav(1)'><i class='fas fa-shopping-cart' style='font-size:2rem;'></i></button>
     <span class= 'total-qty'>0</span>
