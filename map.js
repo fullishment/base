@@ -49,41 +49,6 @@ $(function () {
 
 	setFlatTheme();
 
-	$(window).on("scroll", function (e) {
-		if ($(window).scrollTop() > 50) {
-			$("body").addClass("sticky");
-		} else {
-			$("body").removeClass("sticky");
-		}
-	});
-
-	$(document).on("click", function (e) {
-		e.preventDefault();
-		var $item = $(".rad-dropmenu-item");
-		if ($item.hasClass("active")) {
-			$item.removeClass("active");
-		}
-	});
-
-	$(".rad-sidebar a").on("click", function (e) {
-		e.stopPropagation();
-	});
-
-	$(".rad-chat-body").slimScroll({
-		height: "450px",
-		color: "#c6c6c6"
-	});
-
-	$(".rad-timeline-body").slimScroll({
-		height: "450px",
-		color: "#c6c6c6"
-	});
-
-	$(".rad-activity-body").slimScroll({
-		height: "250px",
-		color: "#c6c6c6"
-	});
-
 	$(".rad-toggle-btn").on("click", function () {
 		$(".rad-logo-container").toggleClass("rad-nav-min");
 		$(".rad-sidebar").toggleClass("rad-nav-min");
@@ -91,13 +56,6 @@ $(function () {
 		setTimeout(function () {
 			initializeCharts();
 		}, 200);
-	});
-
-	$("li.rad-dropdown > a.rad-menu-item").on("click", function (e) {
-		e.preventDefault();
-		e.stopPropagation();
-		$(".rad-dropmenu-item").removeClass("active");
-		$(this).next(".rad-dropmenu-item").toggleClass("active");
 	});
 
 	$(".fa-chevron-down").on("click", function () {
@@ -127,21 +85,6 @@ $(function () {
 			$ele.find(".overlay").remove();
 		}, 2000);
 	});
-
-		$(".rad-chk-pin input[type=checkbox]").change(function (e) {
-		$("body").toggleClass("flat-theme");
-		$("#rad-color-opts").toggleClass("hide");
-		var selectedTheme = $(".rad-color-swatch input[type=radio]:checked");
-		var fillColor = '#C6C6C6';
-		var scale = ["#C8EEFF", "#0071A4"];
-
-		if (this.checked) {
-			scale = ["#A8ECFF", "#FA71D4"];
-			fillColor = colorMap[selectedTheme.val()];
-		}
-		
-		changeMapColors(fillColor, scale);
-	});
 	
 	function changeMapColors(fillColor, scale) {
 		world.remove();
@@ -150,355 +93,19 @@ $(function () {
 		world = new jvm.Map(settings);
 	}
 
-	var colorMap = {
-		crimson: "crimson",
-		teal: "#1fb5ad",
-		orange: "#ff503f",
-		purple: "rebeccapurple",
-		twitter: "#55acee"
-	};
-
-	$(".rad-color-swatch input[type=radio]").change(function (e) {
-		if ($(".rad-chk-pin input[type=checkbox]").is(":checked")) {
-			$("body").removeClass().addClass("flat-theme").addClass(this.value);
-			$(".rad-color-swatch label").removeClass("rad-option-selected");
-			$(this).parent().addClass("rad-option-selected");
-			$(window).scrollTop(0);
-
-			changeMapColors(colorMap[this.value], ["#A8ECFF", "#FA71D4"]);
-		}
-	});
-
-	$(".rad-notification-item").on("click", function (e) {
-		e.stopPropagation();
-	});
-
 	$(window).resize(function () {
 		setTimeout(function () {
 			initializeCharts();
 		}, 200);
 	});
 
-	var colors = ["#E94B3B", "#39C7AA", "#1C7EBB", "#F98E33"];
-	var data = [
-			{
-				y: "1월",
-				a: 50,
-				b: 90
-			},
-			{
-				y: "2월",
-				a: 75,
-				b: 65
-			},
-			{
-				y: "3월",
-				a: 50,
-				b: 40
-			},
-			{
-				y: "4월",
-				a: 10,
-				b: 20
-			},
-			{
-				y: "5월",
-				a: 95,
-				b: 65
-			},
-			{
-				y: "6월",
-				a: 50,
-				b: 40
-			},
-			{
-				y: "7월",
-				a: 75,
-				b: 65
-			},
-			{
-				y: "8월",
-				a: 100,
-				b: 90
-			},
-			{
-				y: "9월",
-				a: 15,
-				b: 65
-			},
-			{
-				y: "10월",
-				a: 75,
-				b: 65
-			},
-			{
-				y: "11월",
-				a: 15,
-				b: 65
-			},
-			{
-				y: "12월",
-				a: 95,
-				b: 65
-			}
-		];
-	let today = new Date();
-	let todate = today.getDate();
-	let tomonth = today.getMonth() + 1;
-	let todate6 = today.getDate(today.setDate(today.getDate()-6));
-	let month6 = today.getMonth(today.setDate(today.getDate())) + 1;
-	let todate5 = today.getDate(today.setDate(today.getDate()+1));
-	let month5 = today.getMonth(today.setDate(today.getDate())) + 1;
-	let todate4 = today.getDate(today.setDate(today.getDate()+1));
-	let month4 = today.getMonth(today.setDate(today.getDate())) + 1;
-	let todate3 = today.getDate(today.setDate(today.getDate()+1));
-	let month3 = today.getMonth(today.setDate(today.getDate())) + 1;
-	let todate2 = today.getDate(today.setDate(today.getDate()+1));
-	let month2 = today.getMonth(today.setDate(today.getDate())) + 1;
-	let todate1 = today.getDate(today.setDate(today.getDate()+1));
-	let month1 = today.getMonth(today.setDate(today.getDate())) + 1;
-	
-	var data2 = [
-		{
-			day: month6 + '월' + todate6 + "일",
-			visit: 25000,
-			join: 5000
-		},
-		{
-			day: month5 + '월' + todate5 + "일",
-			visit: 45000,
-			join: 5000
-		},
-		{
-			day: month4 + '월' +  todate4 + "일",
-			visit: 55000,
-			join: 8000
-		},
-		{
-			day: month3 + '월' +  todate3 + "일",
-			visit: 30000,
-			join: 2000
-		},
-		{
-			day: month2 + '월' +  todate2 + "일",
-			visit: 22000,
-			join: 6000
-		},
-		{
-			day: month1 + '월' +  todate1 + "일",
-			visit: 23000,
-			join: 5400
-		},	
-		{
-			day: tomonth + '월' +  todate + "일", 
-			visit: 25000,
-			join: 5300
-		}
-	];
+
 	function initializeCharts() {
 		$(".rad-chart").empty();
 		$(".d3-*").empty();
-
-		Morris.Line({
-			lineColors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"],
-			element: "lineChart",
-			data: [
-				{
-					year: "2008",
-					value: 45,
-					value2: 15,
-					value3: 95
-				},
-				{
-					year: "2009",
-					value: 10,
-					value2: 40,
-					value3: 80
-				},
-				{
-					year: "2010",
-					value: 45,
-					value2: 95,
-					value3: 5
-				},
-				{
-					year: "2011",
-					value: 20,
-					value2: 60,
-					value3: 40
-				},
-				{
-					year: "2012",
-					value: 45,
-					value2: 0,
-					value3: 90
-				}
-			],
-			xkey: "year",
-			ykeys: ["value", "value2", "value3"],
-			labels: ["Value", "value2", "value3"],
-			pointSize: 0,
-			hideHover: "auto"
-		});
-		// Morris.Donut({
-		// 	element: "donutChart",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart2",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart3",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart4",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart5",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart6",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-
-		Morris.Bar({
-			element: "barChart",
-			data: data,
-			xkey: "y",
-			ykeys: ["a", "b"],
-			barColors: ["#95D7BB", "#79D1CF"],
-			labels: ["방문자 평균", "가입자 평균"]
-		});
-
-		Morris.Bar({
-			element: "barChart2",
-			data: data2,
-			xkey: "day",
-			ykeys: ["visit","join"],
-			barColors: ["#D9DD81", "#79D1CF", "#95D7BB"],
-			labels: ["방문자","가입자"]
-		});
-
-		Morris.Bar({
-			element: "barChart3",
-			data: data,
-			xkey: "y",
-			ykeys: ["a", "b"],
-			barColors: ["#E67A77", "#79D1CF"],
-			labels: ["방문자 평균", "가입자 평균"]
-		});
-
-		Morris.Area({
-			element: "areaChart",
-			padding: 10,
-			behaveLikeLine: true,
-			gridEnabled: false,
-			gridLineColor: "#dddddd",
-			axes: true,
-			fillOpacity: 0.7,
-			data: [
-				{
-					period: "2010 Q1",
-					iphone: 10,
-					ipad: 10,
-					itouch: 10
-				},
-				{
-					period: "2010 Q2",
-					iphone: 1778,
-					ipad: 7294,
-					itouch: 18441
-				},
-				{
-					period: "2010 Q3",
-					iphone: 4912,
-					ipad: 12969,
-					itouch: 3501
-				},
-				{
-					period: "2010 Q4",
-					iphone: 3767,
-					ipad: 3597,
-					itouch: 5689
-				},
-				{
-					period: "2011 Q1",
-					iphone: 6810,
-					ipad: 1914,
-					itouch: 2293
-				},
-				{
-					period: "2011 Q2",
-					iphone: 5670,
-					ipad: 4293,
-					itouch: 1881
-				},
-				{
-					period: "2011 Q3",
-					iphone: 4820,
-					ipad: 3795,
-					itouch: 1588
-				},
-				{
-					period: "2011 Q4",
-					iphone: 25073,
-					ipad: 5967,
-					itouch: 5175
-				},
-				{
-					period: "2012 Q1",
-					iphone: 10687,
-					ipad: 34460,
-					itouch: 22028
-				},
-				{
-					period: "2012 Q2",
-					iphone: 1000,
-					ipad: 5713,
-					itouch: 1791
-				}
-			],
-			lineColors: ["#ED5D5D", "#D6D23A", "#32D2C9"],
-			xkey: "period",
-			ykeys: ["iphone", "ipad", "itouch"],
-			labels: ["iPhone", "iPad", "iPod Touch"],
-			pointSize: 0,
-			lineWidth: 0,
-			hideHover: "auto"
-		});
 	}
 
-	function getTempl(img, text, position) {
-		return (
-			'<div class="rad-list-group-item ' +
-			position +
-			'"><span class="rad-list-icon pull-' +
-			position +
-			'"><img class="rad-list-img" src=' +
-			img +
-			' alt="me" /></span><div class="rad-list-content rad-chat"><span class="lg-text">Me</span><span class="sm-text"><i class="fa fa-clock-o"></i> ' +
-			formatTime(new Date()) +
-			'</span><div class="rad-chat-msg">' +
-			text +
-			"</div>"
-		);
-	}
+
 
 	function formatTime(date) {
 		var hours = date.getHours();
@@ -517,66 +124,7 @@ $(function () {
 	world = new jvm.Map(settings);
 });
 
-var monthNames = [
-		"Jan",
-		"Feb",
-		"Mar",
-		"Apr",
-		"May",
-		"Jun",
-		"Jul",
-		"Aug",
-		"Sep",
-		"Oct",
-		"Nov",
-		"Dec"
-	];
 
-var data = [
-		{
-			label: "Technology",
-			value: 20
-		},
-		{
-			label: "Financial",
-			value: 45
-		},
-		{
-			label: "Industrial Goods",
-			value: 30
-		},
-		{
-			label: "Consumer Goods",
-			value: 10
-		},
-		{
-			label: "Basic Materials",
-			value: 5
-		}
-	];
-
-function getDonutData(group, column) {
-	function sum(numbers) {
-		return _.reduce(
-			numbers,
-			function (result, current) {
-				return result + 1;
-			},
-			0
-		);
-	}
-	var result = _.chain(getChartData())
-		.groupBy(group)
-		.map(function (value, key) {
-			return {
-				label: key,
-				value: sum(_.pluck(value, column))
-			};
-		})
-		.value();
-
-	return result;
-}
 
 function getChartData() {
 	return [
@@ -7090,14 +6638,3 @@ function getChartData() {
 		}
 	];
 }
-$('.chart1').easyPieChart({
-    barColor: '#f16529',  //차트가 그려질 색
-    trackColor: '#ccc',  // 차트가 그려지는 트랙의 기본 배경색(chart1 의 회색부분)
-    scaleColor: '#fff', // 차트 테두리에 그려지는 기준선 (chart2	의 테두리 선)
-    lineCap: 'butt', // 차트 선의 모양 chart1 butt / chart2 round / chart3 square
-    lineWidth: 10, // 차트 선의 두께
-    size: 100, // 차트크기
-    animate: 1000, // 그려지는 시간 
-    onStart: $.noop,
-    onStop: $.noop
-});

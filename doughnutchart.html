@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./doughnutchart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
+</head>
+<body>
+    <div class="card">
+        <!-- Custom information -->
+        <div class="about">
+          <h3>Chart.js</h3>
+          <p class="lead">Smooth doughnut</p>
+        </div>
+        <!-- Canvas for Chart.js -->
+        <canvas id="canvas" height="200"></canvas>
+        <!-- Custom tooltip canvas -->
+        <canvas id="tooltip-canvas" width="150" height="100"></canvas>
+        <!-- Reload button -->
+        <button type="button" id="reload" class="btn-reload">
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.4 61.2"><style>.st0{fill:#AAAAAA;}</style><title>59 all</title><path class="st0" d="M57.6 0h8.7c2.8 0 5 2.2 5 5v51.1c0 2.8-2.2 5-5 5h-8.7c-2.8 0-5-2.2-5-5V5c0-2.7 2.2-5 5-5zM5 24.9h8.7c2.8 0 5 2.2 5 5v26.2c0 2.8-2.2 5-5 5H5c-2.8 0-5-2.2-5-5V29.9c0-2.8 2.2-5 5-5zM31.4 17.8h8.7c2.8 0 5 2.2 5 5v33.4c0 2.8-2.2 5-5 5h-8.7c-2.8 0-5-2.2-5-5V22.8c0-2.8 2.3-5 5-5z"/></svg>
+        </button>
+      </div>
+      <script src="./doughnutchart.js"></script>
+</body>
+</html>
