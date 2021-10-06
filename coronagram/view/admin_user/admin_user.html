@@ -40,7 +40,20 @@
             padding-top: 2px;
         }
 
-      
+        /* 표 */
+        .user_box{
+            border: solid 1px grey;
+            height: 300px;
+            width: 60%;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 20%;
+            border-collapse: collapse;
+        }
+       
+        tr , td,th{
+            border: 1px solid grey;
+        }
 
        
     </style>
@@ -128,8 +141,36 @@
 
     </div>
 
-    <div>
-           <table>
+    <table class="user_box">
+        <c:forEach items = "${}" var = "member">
+            <thead>
+              <tr>
+                <th>회원번호</th><th>ID</th><th>이름</th> <th>전화번호</th><th>이메일</th><th>가입일</th> <th>보유포인트</th><th>회원등급</th><th>관리</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+              </tr>
+              <tr>
+                <td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+              </tr>
+              <tr>
+                <td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+              </tr>
+              <tr>
+                <td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+              </tr>
+              <tr>
+                <td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+              </tr>
+              <tr>
+                <td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td><td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+              </tr>
+            </tbody>
+        </c:forEach>
+    </table>
+           <!-- <table>
             <c:forEach items = "${}" var = "member">
                <tr>
                  <td>${}</td>
@@ -143,8 +184,8 @@
                  <td>${}</td>
                </tr>
             </c:forEach>
-        </table>
-    </div>
+        </table> -->
+    
 
         <script src="../../resources/script/menu_bar/menu_bar.js"></script>
     </body>
