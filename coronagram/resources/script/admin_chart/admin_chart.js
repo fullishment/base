@@ -128,31 +128,7 @@ $(function () {
 		}, 2000);
 	});
 
-	$("#rad-chat-send").on("click", function () {
-		var value = $("#rad-chat-txt").val();
-		var $ele = $(".rad-chat-body");
-		var img =
-			"https://lh4.googleusercontent.com/-GXmmnYTuWkg/AAAAAAAAAAI/AAAAAAAAAAA/oK6DEDS7grM/w56-h56/photo.jpg";
-		
-		if (value) {
-			$("#rad-chat-txt").val("");
-			$ele.append(getTempl(img, value, "left"));
-			
-			setTimeout(function () {
-				img = "http://www.gravatar.com/avatar/9099c2946891970eb4739e6455400913.png";
-				$ele.append(getTempl(img, "Cool!!!", "right"));
-				$ele.slimScroll({
-					scrollTo: $ele[0].scrollHeight
-				});
-			}, 2000);
-
-			$ele.slimScroll({
-				scrollTo: $ele[0].scrollHeight
-			});
-		}
-	});
-
-	$(".rad-chk-pin input[type=checkbox]").change(function (e) {
+		$(".rad-chk-pin input[type=checkbox]").change(function (e) {
 		$("body").toggleClass("flat-theme");
 		$("#rad-color-opts").toggleClass("hide");
 		var selectedTheme = $(".rad-color-swatch input[type=radio]:checked");
@@ -206,67 +182,119 @@ $(function () {
 	var colors = ["#E94B3B", "#39C7AA", "#1C7EBB", "#F98E33"];
 	var data = [
 			{
-				y: "Jan",
+				y: "1월",
 				a: 50,
 				b: 90
 			},
 			{
-				y: "Feb",
+				y: "2월",
 				a: 75,
 				b: 65
 			},
 			{
-				y: "Mar",
+				y: "3월",
 				a: 50,
 				b: 40
 			},
 			{
-				y: "Apr",
+				y: "4월",
 				a: 10,
 				b: 20
 			},
 			{
-				y: "May",
+				y: "5월",
 				a: 95,
 				b: 65
 			},
 			{
-				y: "Jun",
+				y: "6월",
 				a: 50,
 				b: 40
 			},
 			{
-				y: "Jul",
+				y: "7월",
 				a: 75,
 				b: 65
 			},
 			{
-				y: "Aug",
+				y: "8월",
 				a: 100,
 				b: 90
 			},
 			{
-				y: "Sep",
+				y: "9월",
 				a: 15,
 				b: 65
 			},
 			{
-				y: "Oct",
+				y: "10월",
 				a: 75,
 				b: 65
 			},
 			{
-				y: "Nov",
+				y: "11월",
 				a: 15,
 				b: 65
 			},
 			{
-				y: "Dec",
+				y: "12월",
 				a: 95,
 				b: 65
 			}
 		];
-
+	let today = new Date();
+	let todate = today.getDate();
+	let tomonth = today.getMonth() + 1;
+	let todate6 = today.getDate(today.setDate(today.getDate()-6));
+	let month6 = today.getMonth(today.setDate(today.getDate())) + 1;
+	let todate5 = today.getDate(today.setDate(today.getDate()+1));
+	let month5 = today.getMonth(today.setDate(today.getDate())) + 1;
+	let todate4 = today.getDate(today.setDate(today.getDate()+1));
+	let month4 = today.getMonth(today.setDate(today.getDate())) + 1;
+	let todate3 = today.getDate(today.setDate(today.getDate()+1));
+	let month3 = today.getMonth(today.setDate(today.getDate())) + 1;
+	let todate2 = today.getDate(today.setDate(today.getDate()+1));
+	let month2 = today.getMonth(today.setDate(today.getDate())) + 1;
+	let todate1 = today.getDate(today.setDate(today.getDate()+1));
+	let month1 = today.getMonth(today.setDate(today.getDate())) + 1;
+	
+	var data2 = [
+		{
+			day: month6 + '월' + todate6 + "일",
+			visit: 25000,
+			join: 5000
+		},
+		{
+			day: month5 + '월' + todate5 + "일",
+			visit: 45000,
+			join: 5000
+		},
+		{
+			day: month4 + '월' +  todate4 + "일",
+			visit: 55000,
+			join: 8000
+		},
+		{
+			day: month3 + '월' +  todate3 + "일",
+			visit: 30000,
+			join: 2000
+		},
+		{
+			day: month2 + '월' +  todate2 + "일",
+			visit: 22000,
+			join: 6000
+		},
+		{
+			day: month1 + '월' +  todate1 + "일",
+			visit: 23000,
+			join: 5400
+		},	
+		{
+			day: tomonth + '월' +  todate + "일", 
+			visit: 25000,
+			join: 5300
+		}
+	];
 	function initializeCharts() {
 		$(".rad-chart").empty();
 		$(".d3-*").empty();
@@ -312,9 +340,38 @@ $(function () {
 			pointSize: 0,
 			hideHover: "auto"
 		});
-
 		Morris.Donut({
 			element: "donutChart",
+			data: getDonutData("Sector", "Country"),
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart2",
+			data: getDonutData("Sector", "Country"),
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart3",
+			data: getDonutData("Sector", "Country"),
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart4",
+			data: getDonutData("Sector", "Country"),
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart5",
+			data: getDonutData("Sector", "Country"),
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart6",
 			data: getDonutData("Sector", "Country"),
 			labelColor: "#23AE89",
 			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
@@ -326,16 +383,16 @@ $(function () {
 			xkey: "y",
 			ykeys: ["a", "b"],
 			barColors: ["#95D7BB", "#79D1CF"],
-			labels: ["Series A", "Series B"]
+			labels: ["방문자 평균", "가입자 평균"]
 		});
 
 		Morris.Bar({
 			element: "barChart2",
-			data: getDonutData("Sector", "Volume"),
-			xkey: "label",
-			ykeys: ["value"],
+			data: data2,
+			xkey: "day",
+			ykeys: ["visit","join"],
 			barColors: ["#D9DD81", "#79D1CF", "#95D7BB"],
-			labels: ["Sector by Volume"]
+			labels: ["방문자","가입자"]
 		});
 
 		Morris.Bar({
@@ -344,61 +401,7 @@ $(function () {
 			xkey: "y",
 			ykeys: ["a", "b"],
 			barColors: ["#E67A77", "#79D1CF"],
-			labels: ["Series A", "Series B"]
-		});
-
-		Morris.Area({
-			element: "areaChart2",
-			behaveLikeLine: true,
-			padding: 10,
-			fillOpacity: 0.7,
-			lineColors: ["#ED5D5D", "#D6D23A"],
-			gridEnabled: false,
-			gridLineColor: "#dddddd",
-			axes: true,
-			data: [
-				{
-					y: "2006",
-					a: 0,
-					c: 0
-				},
-				{
-					y: "2007",
-					a: 75,
-					c: 112
-				},
-				{
-					y: "2008",
-					a: 50,
-					c: 72
-				},
-				{
-					y: "2009",
-					a: 75,
-					c: 2
-				},
-				{
-					y: "2010",
-					a: 150,
-					c: 92
-				},
-				{
-					y: "2011",
-					a: 75,
-					c: 22
-				},
-				{
-					y: "2012",
-					a: 3,
-					c: 0
-				}
-			],
-			xkey: "y",
-			ykeys: ["a", "c"],
-			labels: ["Open", "Closed"],
-			pointSize: 0,
-			lineWidth: 0,
-			hideHover: "auto"
+			labels: ["방문자 평균", "가입자 평균"]
 		});
 
 		Morris.Area({
@@ -7087,3 +7090,14 @@ function getChartData() {
 		}
 	];
 }
+$('.chart1').easyPieChart({
+    barColor: '#f16529',  //차트가 그려질 색
+    trackColor: '#ccc',  // 차트가 그려지는 트랙의 기본 배경색(chart1 의 회색부분)
+    scaleColor: '#fff', // 차트 테두리에 그려지는 기준선 (chart2	의 테두리 선)
+    lineCap: 'butt', // 차트 선의 모양 chart1 butt / chart2 round / chart3 square
+    lineWidth: 10, // 차트 선의 두께
+    size: 100, // 차트크기
+    animate: 1000, // 그려지는 시간 
+    onStart: $.noop,
+    onStop: $.noop
+});
