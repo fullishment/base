@@ -28,6 +28,7 @@
         var img1src= "../../resources/images/user.png";
         var img2src= "../../resources/images/cam.png";
         var img3src= "../../resources/images/info.png";
+        var img4src= "../../resources/images/msk.png";
 
         function changeImage(src) {
         document.getElementById("mainImage").src = src;
