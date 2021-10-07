@@ -1,10 +1,14 @@
 /* General Variables */
 /* General Styles */
+html{
+  font-family: 'Playfair Display', serif;
+}
 body {
   margin: 0 auto;
   padding: 0;
   font-size: 16px;
   background: #fff;
+  font-family: 'Playfair Display', serif;
 }
 body section {
   display: block;
@@ -21,31 +25,30 @@ body li {
   padding: 0;
 }
 body h1 {
-  font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
 }
 body h2 {
-  font-family: Montserrat, sans-serif;
   font-size: 1.875em;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
 }
 body h3 {
-  font-family: 'Kaushan Script', cursive;
   font-size: 1.5em;
   font-weight: 400;
+  font-family: 'Playfair Display', serif;
 }
 body h4 {
-  font-family: Montserrat, sans-serif;
   font-size: 0.875em;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
 }
 .main-header p,
 .section-1 p {
   line-height: 150%;
-  font-family: Roboto, sans-serif;
   font-size: 0.9375em;
   color: #999;
 }
@@ -82,7 +85,6 @@ body a {
   top: 0;
   width: 100%;
   z-index: 1000;
-  font-family: Montserrat, sans-serif;
   color: #fff;
   background: transparent;
 }
@@ -96,6 +98,7 @@ body a {
   float: left;
   font-weight: 700;
   font-size: 1.875em;
+  font-family: 'Playfair Display', serif;
 }
 .main-header .header-wrapper .main-menu {
   float: right;
@@ -166,7 +169,6 @@ body a {
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
   padding-bottom: 0.3em;
-  font-family: 'Kaushan Script', cursive;
   font-weight: 400;
   font-size: 2.5em;
   text-transform: none;
@@ -189,7 +191,6 @@ body a {
 #section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a {
   padding: 0.5em 2em;
   text-align: center;
-  font-family: Montserrat, sans-serif;
   font-size: 0.875em;
   color: #fff;
   text-transform: uppercase;
@@ -227,7 +228,6 @@ body a {
   display: block;
   width: 70%;
   margin: 0 auto;
-  font-family: Montserrat, sans-serif;
   color: #fff;
 }
 #section-1 .content-slider nav .controls label {
@@ -240,7 +240,6 @@ body a {
   padding-top: 1em;
   text-align: left;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
   font-size: 1em;
   color: white;
   font-weight: 400;
