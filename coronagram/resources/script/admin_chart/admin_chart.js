@@ -65,24 +65,6 @@ $(function () {
 		}
 	});
 
-	$(".rad-sidebar a").on("click", function (e) {
-		e.stopPropagation();
-	});
-
-	$(".rad-chat-body").slimScroll({
-		height: "450px",
-		color: "#c6c6c6"
-	});
-
-	$(".rad-timeline-body").slimScroll({
-		height: "450px",
-		color: "#c6c6c6"
-	});
-
-	$(".rad-activity-body").slimScroll({
-		height: "250px",
-		color: "#c6c6c6"
-	});
 
 	$(".rad-toggle-btn").on("click", function () {
 		$(".rad-logo-container").toggleClass("rad-nav-min");
@@ -295,6 +277,7 @@ $(function () {
 			join: 5300
 		}
 	];
+
 	function initializeCharts() {
 		$(".rad-chart").empty();
 		$(".d3-*").empty();
@@ -340,42 +323,103 @@ $(function () {
 			pointSize: 0,
 			hideHover: "auto"
 		});
-		// Morris.Donut({
-		// 	element: "donutChart",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart2",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart3",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart4",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart5",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
-		// Morris.Donut({
-		// 	element: "donutChart6",
-		// 	data: getDonutData("Sector", "Country"),
-		// 	labelColor: "#23AE89",
-		// 	colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
-		// });
+		Morris.Donut({
+			element: "donutChart",
+			data: 			[
+				{
+					label:"아스트로제네카" ,value: 25
+				},
+				{
+					label:"화이자" ,value: 25
+				},
+				{
+					label:"모더나" ,value: 25
+				},
+				{
+					label:"얀센" ,value: 25
+				}
+			],
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart2",
+			data: 
+			[
+				{
+					label:"아스트로제네카" ,value: 25
+				},
+				{
+					label:"화이자" ,value: 25
+				},
+				{
+					label:"모더나" ,value: 25
+				},
+				{
+					label:"얀센" ,value: 25
+				}
+			],
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart3",
+			data: 			[
+				{
+					label:"아스트로제네카" ,value: 25
+				},
+				{
+					label:"화이자" ,value: 25
+				},
+				{
+					label:"모더나" ,value: 25
+				},
+				{
+					label:"얀센" ,value: 25
+				}
+			],
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart4",
+			data: 			[
+				{
+					label:"아스트로제네카" ,value: 25
+				},
+				{
+					label:"화이자" ,value: 25
+				},
+				{
+					label:"모더나" ,value: 25
+				},
+				{
+					label:"얀센" ,value: 25
+				}
+			],
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+		Morris.Donut({
+			element: "donutChart5",
+			data: 			[
+				{
+					label:"아스트로제네카" ,value: 25
+				},
+				{
+					label:"화이자" ,value: 25
+				},
+				{
+					label:"모더나" ,value: 25
+				},
+				{
+					label:"얀센" ,value: 25
+				}
+			],
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
+
 
 		Morris.Bar({
 			element: "barChart",
@@ -383,7 +427,7 @@ $(function () {
 			xkey: "y",
 			ykeys: ["a", "b"],
 			barColors: ["#95D7BB", "#79D1CF"],
-			labels: ["방문자 평균", "가입자 평균"]
+			labels: ["총 방문자", "총 가입자"]
 		});
 
 		Morris.Bar({
@@ -391,8 +435,8 @@ $(function () {
 			data: data2,
 			xkey: "day",
 			ykeys: ["visit","join"],
-			barColors: ["#D9DD81", "#79D1CF", "#95D7BB"],
-			labels: ["방문자","가입자"]
+			barColors: ["#D9DD81", "#79D1CF"],
+			labels: ["방문자"," 가입자"]
 		});
 
 		Morris.Bar({
@@ -566,6 +610,28 @@ function getDonutData(group, column) {
 		);
 	}
 	var result = _.chain(getChartData())
+		.groupBy(group)
+		.map(function (value, key) {
+			return {
+				label: key,
+				value: sum(_.pluck(value, column))
+			};
+		})
+		.value();
+
+	return result;
+}
+function getDonutData2(group, column) {
+	function sum(numbers) {
+		return _.reduce(
+			numbers,
+			function (result, current) {
+				return result + 1;
+			},
+			0
+		);
+	}
+	var result = _.chain(getChartData2())
 		.groupBy(group)
 		.map(function (value, key) {
 			return {
