@@ -99,6 +99,14 @@ transform:rotate(0);
     height: 30px;
     width: 300px;
 }
+.dbox {
+    margin-left: 10px;
+}
+.QTI1 {
+    height: 20px;
+    width: 51px;
+    margin-left: 10px;
+}
 textarea {
     resize: none;
 }
