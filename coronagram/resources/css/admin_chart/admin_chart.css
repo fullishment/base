@@ -40,11 +40,10 @@ a:active {
   display: inline;
 }
 .main_title{
-  width: 100vw;
+  width:90%;
   height: 10%;
   font-size: 2em;
-  margin-left: 5%;
-  margin-top: 25px;
+    margin-top: 25px;
   /* margin-left: 40%; */
   font-family: 'Times New Roman', Times, serif;
   /* border: 1px solid black; */
@@ -454,7 +453,62 @@ a:active {
   opacity: 0;
   overflow: hidden;
 }
+.vaccine{
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.vaccine_name{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left:5%;
+}
+.az, .pfizer, .moderna, .jansen{
+ display: inherit;
+ margin: auto;
 
+}
+.vaccine_name p{
+  width: 150px;
+  margin: auto;
+  padding: 0;
+  font-size: 15px;
+}
+.az span, .pfizer span, .moderna span, .jansen span{
+  white-space: nowrap;
+width: auto;
+margin: auto;
+margin-left:6% ;
+padding: 0;
+}
+.azs{
+  background-color: #E67A77;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.pfizers{
+  background-color: #D9DD81;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.modernas{
+  background-color: #79D1CF;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.jansens{
+  background-color: #95D7BB;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
@@ -522,6 +576,9 @@ a:active {
 
   .flat-theme .rad-toggle-btn {
     top: 20px !important;
+  }
+  .doughnut-chart{
+    height: 200px;
   }
 }
 @media screen and (max-width: 850px) {

@@ -8,8 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../resources/css/admin_chart/admin_chart.css">
     <link rel="stylesheet" href="../../resources/css/menu_bar/menu_bar.css">
+    <link rel="stylesheet" href="../../resources/css/admin_chart/3.3.4bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
@@ -94,7 +94,7 @@
         <div class="main_title">
             <h1>코로나 통계 자료</h1>
         </div>
- 
+
         <section>
             <div class="rad-body-wrapper rad-nav-min">
                 <div class="container-fluid">
@@ -133,10 +133,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">전세계 현황<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -152,10 +150,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">월별 코로나 현황<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -165,33 +161,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-6" style="display: none;">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Area Chart<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
-                                            <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
-                                            </li>
-                                        </ul>
-                                    </h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div id="areaChart2" class="rad-chart"></div>
-                                </div>
-
-                            </div>
-                        </div>
-
                         <div class="col-lg-6 col-md-12 col-xs-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">연령대별 코로나 접종 백신 비율%<ul class="rad-panel-action">
-                                        <li><i class="fa fa-chevron-down"></i></li>
-                                        <li><i class="fa fa-rotate-right"></i></li>
-                                        <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+                                            <li><i class="fa fa-rotate-right"></i></li>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -201,15 +176,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-8 col-xs-12"">
-                            <div class="panel panel-default">
+                    </div>
+                    <div class="row">
+                        <div class="main_title">
+                            <h1>백신 종류별 접종 현황</h1>
+                        </div>
+                        <div class="col-lg-3 col-md-8 col-xs-12 doughnut-chart">
+                            <div class=" panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Donut Chart<ul class="rad-panel-action">
-                                        
-                                            <li><i class="fa fa-chevron-down"></i></li>
+                                    <h3 class="panel-title">10대<ul class="rad-panel-action">
+
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -219,14 +197,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-8 col-xs-12"">
-                            <div class="panel panel-default">
+                        <div class="col-lg-3 col-md-8 col-xs-12 doughnut-chart">
+                            <div class=" panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Donut Chart<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
+                                    <h3 class="panel-title">20대<ul class="rad-panel-action">
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -236,14 +212,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-8 col-xs-12"">
-                            <div class="panel panel-default">
+                        <div class="col-lg-3 col-md-8 col-xs-12 doughnut-chart">
+                            <div class=" panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Donut Chart<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
+                                    <h3 class="panel-title">30대<ul class="rad-panel-action">
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -253,14 +227,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-8 col-xs-12"">
-                            <div class="panel panel-default">
+                        <div class="col-lg-3 col-md-8 col-xs-12 doughnut-chart">
+                            <div class=" panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Donut Chart<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
+                                    <h3 class="panel-title">40대<ul class="rad-panel-action">
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -270,14 +242,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-8 col-xs-12"">
-                            <div class="panel panel-default">
+                        <div class="col-lg-3 col-md-8 col-xs-12 doughnut-chart">
+                            <div class=" panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Donut Chart<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
+                                    <h3 class="panel-title">50대 이후<ul class="rad-panel-action">
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -287,38 +257,40 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-8 col-xs-12"">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Donut Chart<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
-                                            <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
-                                            </li>
-                                        </ul>
-                                    </h3>
+                        <div class="vaccine">
+
+                            <div class="vaccine_name">
+                                <p>백신종류</p>
+                                <div class="az">
+                                    <div class="azs"></div>
+                                    <span>아스트로제네카</span>
                                 </div>
-                                <div class="panel-body">
-                                    <div id="donutChart6" class="rad-chart"></div>
+                                <div class="pfizer">
+                                    <div class="pfizers"></div>
+                                    <span>화이자</span>
+                                </div>
+                                <div class="moderna">
+                                    <div class="modernas"></div>
+                                    <span>모더나</span>
+                                </div>
+                                <div class="jansen">
+                                    <div class="jansens"></div>
+                                    <span>얀센</span>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
-                   
+                    <div class="row">
+                        <div class="main_title">
+                            <h1>방문자 통계 자료</h1>
+                        </div>
                         <div class="col-md-6 col-lg-12">
-                            <div class="main_title">
-                                <h1>방문자 통계 자료</h1>
-                            </div>
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">월별 방문 가입자 총합<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -331,11 +303,9 @@
                         <div class="col-md-6 col-lg-6">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">일주인간 방문, 가입자 수<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
+                                    <h3 class="panel-title">일주일간 방문, 가입자 수<ul class="rad-panel-action">
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -349,10 +319,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">아직 정하지않음<ul class="rad-panel-action">
-                                            <li><i class="fa fa-chevron-down"></i></li>
                                             <li><i class="fa fa-rotate-right"></i></li>
-                                            <li><i class="fa fa-cog"></i>
-                                            <li><i class="fa fa-close"></i>
+
                                             </li>
                                         </ul>
                                     </h3>
@@ -362,21 +330,74 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="main_title">
-                            <h1>회원 등급 통계 자료</h1>
+                            <h1>방문자 통계 자료</h1>
                         </div>
-                        <div class="main_title">
-                            <h1>백신 접종 통계 정보</h1>
-                        </div>
-                        <div class="main_title">
-                            <h1>쇼핑몰 통계 정보</h1>
-                        </div>
+                        <div class="col-md-6 col-lg-12">
 
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">월별 방문 가입자 총합<ul class="rad-panel-action">
+                                            <li><i class="fa fa-rotate-right"></i></li>
+
+                                            </li>
+                                        </ul>
+                                    </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="barChart3" class="rad-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main_title">
+                            <h1>방문자 통계 자료</h1>
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">월별 방문 가입자 총합<ul class="rad-panel-action">
+                                            <li><i class="fa fa-rotate-right"></i></li>
+
+                                            </li>
+                                        </ul>
+                                    </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="barChart3" class="rad-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main_title">
+                            <h1>방문자 통계 자료</h1>
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">월별 방문 가입자 총합<ul class="rad-panel-action">
+                                            <li><i class="fa fa-rotate-right"></i></li>
+
+                                            </li>
+                                        </ul>
+                                    </h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="barChart3" class="rad-chart"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <!-- <script src="../../resources/script/admin_chart/doughnutchart2.js"></script> -->
     <script src="../../resources/script/admin_chart/admin_chart.js"></script>
     <script src="../../resources/script/menu_bar/menu_bar.js"></script>
 </body>
