@@ -25,10 +25,10 @@ $('.cm_menu .cm_arrowspan').click(function () {
     }
 });
 // main
-var img1src= "../../resources/images/msk.png";
-var img2src= "../../resources/images/user.png";
-var img3src= "../../resources/images/cam.png";
-var img4src= "../../resources/images/info.png";
+var img1src= "../../resources/images/마스크.jpg";
+var img2src= "../../resources/images/마스크2.jpg";
+var img3src= "../../resources/images/마스크3.jpg";
+var img4src= "../../resources/images/마스크4.jpg";
 
 function changeImage(src) {
 document.getElementById("mainImage").src = src;
