@@ -428,6 +428,11 @@
     height: 30px;
 } */
 
+/* 오른쪽  */
+.rightCont {
+    float: left;
+    width: 50%; /*반응형땐 없애기*/
+}
 
 /* 카트 폼 */
 .detailsCont {
@@ -542,12 +547,11 @@
     color: #fff;
 }
 
-@media only screen and (min-width: 500px) {
-    /* 전체틀 */
+/* @media only screen and (min-width: 100px) {
     .rightCont {
         float: left;
     }
-}
+} */
 
 /* 색상 */
 
