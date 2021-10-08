@@ -352,157 +352,221 @@
             opacity: 1;
         }
 /* 메인CSS */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        .wrapper {
-            background: #ecf0f1;
-            height: 94vh;
-            overflow:auto;
-            padding: 0% 2%;
-        }
-        
-        .mainContent {
-            float: left;
-            width: 100%;
-            padding: 50px;
-        }
-        
-        
-        .leftCont {
-            float: left;
-            width: 50%;
-        }
-        
-        .imagesCont {
-            width: 100%;
-            float: left;
-            text-align: center;
-        }
-        
-        .mainImageCont {
-            width: 100%;
-            padding: 5% 0%;
-            
-        }
-        
-        .mainImageCont img#mainImage {
-            width: 300px;
-        }
-        
-        .thumbsCont {
-            width: 100%;
-            margin: 5% 0% 0%;
-        }
-        
-        .thumbsCont ul.thumbs {
-            width: 100%;
-            list-style: none;
-            text-align: center;
-        }
-        
-        .thumbs li {
-            display: inline;
-            margin: 3%
-        }
-        
-        .thumbs li img {
-            width: 10%;
-            background: white;
-            border: 1px solid gray;
-            border-radius: 5px;
-            padding: 3px;
-        }
+.wrapper {
+    background: #ecf0f1;
+    height: 94vh;
+    overflow:auto;
+    padding: 0% 2%;
+}
 
-        /* dtl */
+.mainContent {
+    float: left;
+    width: 100%;
+    padding: 50px;
+}
 
-        .detailsCont {
-            border-radius: 10px;
-            background: white;
-            width: 300px;
-            min-height: 400px;
-            margin: 30px;
-            padding: 30px;
-        }
-        .gbn {
-            border: 1px solid rgba(240, 240, 240, 0.9);
-            width: 250px;
-        }
-        .dtl_title {
-            text-align: center;
-            margin: 10px;
-        }
-        .dp_l {
-            float: left;
-            width: 10px;
-        }
-        .dp_R {
-            float: right;
-        }
-        .dtl_option {
-            background: #ecf0f1;
-            width: 100%;
-            height: 20%;
-            border-radius: 10px;
-            padding: 30px;
-        }
-        .cnt_box {
-            width: 50px;
-        }
-        .dt_l {
-            float: left;
-            width: 10px;
-        }
-        .dt_R {
-            float: right;
-        }
-        /* dtl */
 
-        .otherLinksCont {
-            width: 100%;
-        }
-        
-        .otherLinksCont ul.otherLinks {
-            width: 100%;
-            list-style: none;
-            text-align: center;
-            margin-top: 5%;
-        }
-        
-        .otherLinks li {
-            display: inline-block;
-            width: 40%;
-            margin: 0 1%;
-        }
-        
-        .otherLinks li a {
-            display: block;
-            text-decoration: none;
-            font: bold 80% Verdana;
-            background: white;
-            transition: all 0.3s ease-in;
-            color: black;
-            border: 1px solid;
-            border-radius: 50px;
-            padding: 4% 5%;
-        }
-        
-        .otherLinks li a:hover {
-            display: block;
-            background: black;
-            color: #fff;
-        }
-        
-        .rightCont {
-            float: right;
-            width: 50%;
-        }
-        
-        /* @media only screen and (max-width: 700px) {
-            .rightCont {
-                float: left;
-            }
-        } */
+.leftCont {
+    float: left;
+    width: 50%;
+}
+
+.imagesCont {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.mainImageCont {
+    width: 100%;
+    padding: 5% 0%;
+    
+}
+
+.mainImageCont img#mainImage {
+    width: 300px;
+}
+
+.thumbsCont {
+    width: 100%;
+    margin: 5% 0% 0%;
+}
+
+.thumbsCont ul.thumbs {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.thumbs li {
+    display: inline;
+    margin: 3%
+}
+
+.thumbs li img {
+    width: 10%;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* cart */
+/* 삭제
+.remove {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 30px;
+} */
+
+
+/* 카트 폼 */
+.detailsCont {
+    border-radius: 10px;
+    background: white;
+    width: 470px;
+    min-height: 630px;
+    margin: 30px;
+    padding: 30px;
+}
+/* 구분선 */
+.gbn {
+    border: 1px solid rgba(240, 240, 240, 0.9);
+    width: 400px;
+    margin: 10px 0 10px 0;
+}
+/* 상품 */
+.product {
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* 상품설명 */
+.product .content {
+    height: 50px;
+}
+
+/* 개당가격 */
+.product footer .price {
+    background: #fcfcfc;
+    color: #000;
+    float: left;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 50px;
+    padding: 0 30px;
+}
+/* 상품 토탈가격 */
+.product footer .full-price {
+    background: gray;
+    color: #fff;
+    float: right;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 49px;
+    padding: 0 20px;
+}
+/* 수량증감폼 */
+.qt, .qt-plus, .qt-minus {
+    display: block;
+    float: left;
+}
+/* 갯수 */
+.qt {
+    font-size: 19px;
+    line-height: 50px;
+    width: 30px;
+    text-align: center;
+}
+/* 증감 */
+.qt-plus, .qt-minus {
+    background: #fcfcfc;
+    border: none;
+    font-size: 30px;
+    font-weight: 300;
+    height: 100%;
+    padding: 0 20px;
+}
+/* 증감호버 */
+.qt-plus:hover, .qt-minus:hover {
+    background: gray;
+    color: #fff;
+    cursor: pointer;
+}
+/* 계산 */
+#site-footer {
+    padding: 10px 0 70px 0;
+}
+
+.subtotal, .shipping, .total {
+    float: right;
+}
+.total {
+    margin: 80px 0 20px 0;
+}
+/* 구매버튼 */
+.otherLinksCont ul.otherLinks {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.otherLinks li {
+    display: inline-block;
+    width: 40%;
+}
+
+.otherLinks li a {
+    display: block;
+    text-decoration: none;
+    font: bold 80% Verdana;
+    color: black;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 5% 5%;
+}
+
+.otherLinks li a:hover {
+    display: block;
+    background: black;
+    color: #fff;
+}
+
+@media only screen and (min-width: 500px) {
+    /* 전체틀 */
+    .rightCont {
+        float: left;
+    }
+}
+
+/* 색상 */
+
+
+/* .red, .yellow, .blue {
+    float: right;
+    width: 10px;
+    height: 10px;
+}
+
+.red {
+    background: #cb5a5e;
+}
+
+.yellow {
+    background: #f1c40f;
+}
+
+.blue {
+    background: #3598dc;
+}
+*/
