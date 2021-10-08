@@ -436,6 +436,10 @@ textarea{
 a {
     text-decoration: none;
 }
+a:visited {
+    color: black;
+    
+}
 h3 {
     margin-bottom: 15px;
 }
