@@ -48,6 +48,9 @@
         }
         
 /* 문의내역 */
+        p {
+            font-family: "Noto Sans KR", sans-serif;
+        }
         .scmL{
             border: 1px solid black;
             border-collapse:collapse;

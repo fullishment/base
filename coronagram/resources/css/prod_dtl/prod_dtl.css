@@ -7,7 +7,9 @@ html {
     margin: 0;
     padding: 0;
 }
-
+p {
+    font-family: "Noto Sans KR", sans-serif;
+}
 .wrapper {
     background: #ecf0f1;
     height: 94vh;
@@ -137,7 +139,7 @@ html {
         .color_R {
             width: 70%;
             float: left;
-            margin-bottom: 20px;
+            margin-bottom: 20px; 
         }
         .select_color {
             width: 100px;
@@ -145,9 +147,10 @@ html {
         .cnt_L {
             width: 30%;
             float: left;
+            margin-left: -95px; /*폰트하고 이상해져서 맞춤*/
         }
         .cnt_R {
-            width: 70%;
+            width: 69%; /*폰트하고 이상해져서 맞춤*/
             float: left;
         }
         /* 수량증감폼 */
