@@ -72,78 +72,72 @@
         </div>
     </header>
 
-
-    <section id="main">
-        <div class="main-left">
-            <div class="lcon1">
-                <div class="input_box">
-                    <h3>장바구니</h3>
-                    <div class="lradio_box">
-                        <input type="checkbox" name="all" class="check_all"><label>전체선택</label></button>
+    <main>
+        <section id="main">
+            <div class="main-left">
+                <div class="lcon1">
+                    <div class="input_box">
+                        <h1>장바구니</h1>
+                        <div class="lradio_box">
+                            <input type="checkbox" name="all" class="check_all"><label>&nbsp;&nbsp;전체선택</label></button>
+                        </div>
                     </div>
+                    <button class="seldel_btn">
+                        <i>선택삭제</i>
+                    </button>
                 </div>
-                <button>
-                    <p>선택 삭제</p>
-                </button>
-            </div>
-            <div class="lcon2">
-                <div class="lcon2_up">
-                    <input type="checkbox" name="ab" class="check_btn">
-                    <span class="del_btn"></span>
-                    <div class="up_con1"></div>
-                    <div class="up_con2">
-                        <p>갤럭시 마스크 ver4</p><br>
-                        <p>sm-3244gs</p><br><br>
-                        <p>화이트</p><br>
-                    </div>
-                    <div class="up_con3">
+                <div class="lcon2">
+                    <div class="lcon2_up">
+                        <input type="checkbox" name="ab" class="check_btn">
                         
-                                <button class="m_btn" type ="button" >-</button>
-                                <input type="text" value="0" style="text-align:center;"/>
-                                <button class="p_btn" type="button" >+</button>
-                           
+                        <div class="up_con1"></div>
+                        <div class="up_con2">
+                            <div class="con2_title">타이틀명</div>
+                            <div class="con2_subtitle">sm-asdasdsad</div>
+                            <div class="con2_color">색상</div>
+                            <div class="con2_memo">메모</div>
+                        </div>
+                        <div class="up_con3">
+                            <button class="m_btn" type="button">-</button>
+                            <input type="text" value="0" />
+                            <button class="p_btn" type="button">+</button>
+                        </div>
+                        <div class="up_con4">
+                            <p class="del_btn"></p>
+                            <p>27,800 원</p>
+                        </div>
                     </div>
-                    <div class="up_con4">
-                        <p>27,800 원</p>
+                    <div class="lcon2_down">
+                        <div class="down_con1">
+                            <p>장바구니 상품은 30일간 보관됩니다</p>
+                        </div>
                     </div>
                 </div>
-                <div class="lcon2_down">
-                    <div class="down_con1">
-                        <p>장바구니 상품은 30일간 보관됩니다</p>
-                    </div>
-                    <div>
-                    </div>
-                </div>
-
-
+                <div class="lcon3"></div>
             </div>
-            <div class="lcon3"></div>
-        </div>
-        <div class="main-right">
-            <div class="rcon1">
-
-            </div>
-            <div class="rcon2">
-                <div class="rcon2_con1">
-                    <p>배송지를 등록해 주세요.</p><br>
-                    <button class="cj_btn">배송지 등록</button>
+            <div class="main-right">
+                <div class="rcon1">
 
                 </div>
-                <div class="rcon2_con2">
-                    <div class="entire_item"><span>전체 상품</span><span>개</span></div>
-                    <div class="order_price"><span>주문 금액</span><span>원</span></div>
-                    <div class="discount_price"><span>할인 금액</span><span>원</span></div>
-                </div>
-                <div class="rcon2_con3">
-                    <div class="due_price"><span>결제 예정 금액</span><span>원</span></div>
-                    <button class="order">주문하기</button>
+                <div class="rcon2">
+                    <div class="rcon2_con1">
+                        <p>배송지를 등록해 주세요.</p><br>
+                        <button class="add_btn">배송지 등록</button>
+                    </div>
+                    <div class="rcon2_con2">
+                        <div class="entire_item"><span>전체 상품</span><span>개</span></div>
+                        <div class="order_price"><span>주문 금액</span><span>원</span></div>
+                        <div class="discount_price"><span>할인 금액</span><span>원</span></div>
+                    </div>
+                    <div class="rcon2_con3">
+                        <div class="due_price"><span>결제 예정 금액</span><span>원</span></div>
+                        <button class="order_btn">주문하기</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-
+    </main>
 
 
 
@@ -151,9 +145,9 @@
 
 
     <script>
-        $(document).ready(function(){
-            $('.check_all').click(function(){
-                $('.check_btn').prop('checked',this.checked);
+        $(document).ready(function () {
+            $('.check_all').click(function () {
+                $('.check_btn').prop('checked', this.checked);
             });
         });
     </script>
@@ -162,7 +156,7 @@
 
 
 
-    
+
 
     <script src="../../resources/script/menu_bar/menu_bar.js"></script>
 </body>

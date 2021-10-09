@@ -1,5 +1,9 @@
 body{
-    font-family: "Noto Sans KR", sans-serif;
+  overflow: auto;  
+}
+
+body{
+  font-family: "Noto Sans KR", sans-serif;
   color: #054231;
   display: flex;
   justify-content: center;

@@ -1,5 +1,9 @@
 
 /* main */
+main{
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
 .sc {
     max-width: 800px;
     margin: auto;
@@ -76,37 +80,30 @@ transform:rotate(0);
     margin-top: 10px;
     min-height: 400px;
     min-width: 800px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
-.scMain {
+/* .scMain {
     width: 60%;
-}
+} */
 
 /* Q&A */
 
 .QnaTitle {
     display: inline-block;
 }
-.QnaTitle2{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
+
+
+
 .QTI, .QCI{
     width: 100%;
     border: 1px solid rgb(148, 145, 145);
 }
 .QTI {
-    height: 30px;
-    width: 300px;
+    height: 17px;
+    width: 200px;
 }
-.dbox {
-    margin-left: 10px;
-}
-.QTI1 {
-    height: 20px;
-    width: 51px;
-    margin-left: 10px;
-}
+
+
 textarea {
     resize: none;
 }
