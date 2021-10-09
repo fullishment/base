@@ -79,8 +79,7 @@
                 <div class="input_box">
                     <h3>장바구니</h3>
                     <div class="lradio_box">
-                        <input type="radio"></button>
-                        <p>전체선택</p>
+                        <input type="checkbox" name="all" class="check_all"><label>전체선택</label></button>
                     </div>
                 </div>
                 <button>
@@ -89,7 +88,7 @@
             </div>
             <div class="lcon2">
                 <div class="lcon2_up">
-                    <input type="radio" class="check_btn">
+                    <input type="checkbox" name="ab" class="check_btn">
                     <span class="del_btn"></span>
                     <div class="up_con1"></div>
                     <div class="up_con2">
@@ -149,6 +148,15 @@
 
 
 
+
+
+    <script>
+        $(document).ready(function(){
+            $('.check_all').click(function(){
+                $('.check_btn').prop('checked',this.checked);
+            });
+        });
+    </script>
 
 
 
