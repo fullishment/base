@@ -1,5 +1,6 @@
 html {
-    height: 100%;     
+    height: 100%;
+    overflow: hidden;     
   }
 
   body {
@@ -24,7 +25,7 @@ html {
     display: flex;
     flex: 1 1 100%;
     align-items: stretch;
-    box-shadow: 0 0 20px 6px #090b6f85;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     position: relative;
     top: 50px;
   }
@@ -37,7 +38,7 @@ html {
     color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../../resources/images/instagram_bg.jpg");
+    background-image: url(../../images/insta_bg.jpg);
     overflow: hidden;
   }
 
@@ -70,7 +71,7 @@ html {
     padding: 14px 50px;
     border-radius: 100px;
     display: inline-block;
-    box-shadow: 0 3px 6px 1px #042d4657;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
   }
 
   .box-form .left .overlay span a:last-child {
