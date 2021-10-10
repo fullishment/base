@@ -83,6 +83,7 @@ body {
 }
 
 .box-form .right label {
+  margin-top: 10px;
   font-size: 14px;
   color: #B0B3B9;
 }
@@ -105,7 +106,15 @@ body {
   display: none;
 }
 
+.r_title{
+  font-size: 30pt !important;
+  color: #B0B3B9;
+}
+
 /* 인풋 */
+.group{
+  margin-top: 20px;
+}
 
 .group input {
   padding: 10px;
@@ -134,7 +143,6 @@ body {
 }
 
 #tab-1 {
-
   float: left;
 }
 
