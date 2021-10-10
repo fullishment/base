@@ -36,6 +36,9 @@
         .cancel_btn:hover {
             opacity: .8;
         }
+        .list_btn:hover {
+            opacity: .8;
+        }
         
 /* 문의내역 */
         p {
@@ -72,6 +75,26 @@
             border: none;
             border-radius: 7px;
             background: gray;
+            margin-left: 10px;
+            margin-right: 35px;
+        }
+        .list_btn {
+            float: right;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: gray;
+            margin-left: 10px;
+            margin-top: 35px;
+            margin-right: 10px;
+            padding: 0px;
         }
         .scmL2 {
             float: left;
