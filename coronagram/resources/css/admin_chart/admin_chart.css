@@ -455,8 +455,8 @@ a:active {
 }
 .vaccine{
   display: inline-block;
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-top: 25px;
+  margin-left: 39.5vw;
 }
 .vaccine_name{
   display: flex;
@@ -478,34 +478,36 @@ a:active {
   white-space: nowrap;
 width: auto;
 margin: auto;
-margin-left:6% ;
+margin-top: 5px;
+margin-left:10px;
 padding: 0;
+font-size: 12px;
 }
 .azs{
   background-color: #E67A77;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   margin-top: 5px;
   margin-left: 5px;
 }
 .pfizers{
   background-color: #D9DD81;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   margin-top: 5px;
   margin-left: 5px;
 }
 .modernas{
   background-color: #79D1CF;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   margin-top: 5px;
   margin-left: 5px;
 }
 .jansens{
   background-color: #95D7BB;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   margin-top: 5px;
   margin-left: 5px;
 }

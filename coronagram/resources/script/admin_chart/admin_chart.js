@@ -164,65 +164,89 @@ $(function () {
 	var colors = ["#E94B3B", "#39C7AA", "#1C7EBB", "#F98E33"];
 	var data = [
 			{
-				y: "1월",
-				a: 50,
-				b: 90
+				month: "1월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "2월",
-				a: 75,
-				b: 65
+				month: "2월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "3월",
-				a: 50,
-				b: 40
+				month: "3월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "4월",
-				a: 10,
-				b: 20
+				month: "4월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "5월",
-				a: 95,
-				b: 65
+				month: "5월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "6월",
-				a: 50,
-				b: 40
+				month: "6월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "7월",
-				a: 75,
-				b: 65
+				month: "7월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "8월",
-				a: 100,
-				b: 90
+				month: "8월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "9월",
-				a: 15,
-				b: 65
+				month: "9월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			},
 			{
-				y: "10월",
-				a: 75,
-				b: 65
-			},
-			{
-				y: "11월",
-				a: 15,
-				b: 65
-			},
-			{
-				y: "12월",
-				a: 95,
-				b: 65
+				month: "10월",
+				visit: 50,
+				join: 90,
+				avg_visit: 100,
+				avg_join: 100
 			}
+			// {
+				// month: "11월",
+				// visit: 50,
+				// join: 90,
+				// avg_visit: 100,
+				// avg_join: 100
+			// },
+			// {
+				// month: "12월",
+				// visit: 50,
+				// join: 90,
+				// avg_visit: 100,
+				// avg_join: 100
+			// }
 		];
 	let today = new Date();
 	let todate = today.getDate();
@@ -277,52 +301,241 @@ $(function () {
 			join: 5300
 		}
 	];
-
+	var data3 = [
+		{
+			age: '10대',
+			person: 70000
+		},
+		{
+			age: '20대',
+			person: 70000
+		},
+		{
+			age: '30대',
+			person: 70000
+		},
+		{
+			age: '40대',
+			person: 70000
+		},
+		{
+			age: '50대',
+			person: 70000
+		},
+		{
+			age: '60대 이상',
+			person: 70000
+		}
+	];
+	var data4 = [
+		{
+			item: "iphone",
+			quantity: 200
+		},
+		{
+			item: "ipad",
+			quantity: 200
+		},
+		{
+			item: "mask",
+			quantity: 200
+		},
+		{
+			item: "name",
+			quantity: 200
+		},
+		{
+			item: "name",
+			quantity: 200
+		},
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		}
+	];
+	var data5 =  [
+		{
+			period: "2020-1",
+			coronic: 10,
+			dead: 10,
+			fl_rec: 10
+		},
+		{
+			period: "2020-2",
+			coronic: 1778,
+			dead: 7294,
+			fl_rec: 18441
+		},
+		{
+			period: "2020-3",
+			coronic: 4912,
+			dead: 12969,
+			fl_rec: 3501
+		},
+		{
+			period: "2020-4",
+			coronic: 3767,
+			dead: 3597,
+			fl_rec: 5689
+		},
+		{
+			period: "2020-5",
+			coronic: 6810,
+			dead: 1914,
+			fl_rec: 2293
+		},
+		{
+			period: "2020-6",
+			coronic: 5670,
+			dead: 4293,
+			fl_rec: 1881
+		},
+		{
+			period: "2020-7",
+			coronic: 4820,
+			dead: 3795,
+			fl_rec: 1588
+		},
+		{
+			period: "2020-8",
+			coronic: 25073,
+			dead: 5967,
+			fl_rec: 5175
+		},
+		{
+			period: "2020-9",
+			coronic: 10687,
+			dead: 34460,
+			fl_rec: 22028
+		},
+		{
+			period: "2020-10",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2020-11",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2020-12",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-1",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-2",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-3",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-4",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-5",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-6",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-7",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-8",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-9",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		},
+		{
+			period: "2021-10",
+			coronic: 1000,
+			dead: 5713,
+			fl_rec: 1791
+		}
+	]
 	function initializeCharts() {
 		$(".rad-chart").empty();
 		$(".d3-*").empty();
 
-		Morris.Line({
-			lineColors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"],
-			element: "lineChart",
-			data: [
-				{
-					year: "2008",
-					value: 45,
-					value2: 15,
-					value3: 95
-				},
-				{
-					year: "2009",
-					value: 10,
-					value2: 40,
-					value3: 80
-				},
-				{
-					year: "2010",
-					value: 45,
-					value2: 95,
-					value3: 5
-				},
-				{
-					year: "2011",
-					value: 20,
-					value2: 60,
-					value3: 40
-				},
-				{
-					year: "2012",
-					value: 45,
-					value2: 0,
-					value3: 90
-				}
-			],
-			xkey: "year",
-			ykeys: ["value", "value2", "value3"],
-			labels: ["Value", "value2", "value3"],
-			pointSize: 0,
-			hideHover: "auto"
-		});
+		// Morris.Line({
+		// 	lineColors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"],
+		// 	element: "lineChart",
+		// 	data: [
+		// 		{
+		// 			year: "2008",
+		// 			value: 45,
+		// 			value2: 15,
+		// 			value3: 95
+		// 		},
+		// 		{
+		// 			year: "2009",
+		// 			value: 10,
+		// 			value2: 40,
+		// 			value3: 80
+		// 		},
+		// 		{
+		// 			year: "2010",
+		// 			value: 45,
+		// 			value2: 95,
+		// 			value3: 5
+		// 		},
+		// 		{
+		// 			year: "2011",
+		// 			value: 20,
+		// 			value2: 60,
+		// 			value3: 40
+		// 		},
+		// 		{
+		// 			year: "2012",
+		// 			value: 45,
+		// 			value2: 0,
+		// 			value3: 90
+		// 		}
+		// 	],
+		// 	xkey: "year",
+		// 	ykeys: ["value", "value2", "value3"],
+		// 	labels: ["Value", "value2", "value3"],
+		// 	pointSize: 0,
+		// 	hideHover: "auto"
+		// });
 		Morris.Donut({
 			element: "donutChart",
 			data: 			[
@@ -419,15 +632,40 @@ $(function () {
 			labelColor: "#23AE89",
 			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
 		});
+		Morris.Donut({
+			element: "donutChart6",
+			data: 			[
+				{
+					label:"bronze" ,value: 25
+				},
+				{
+					label:"silver" ,value: 25
+				},
+				{
+					label:"gold" ,value: 25
+				},
+				{
+					label:"platinum" ,value: 25
+				},
+				{
+					label:"diamond" ,value: 25
+				},
+				{
+					label:"manager" ,value: 25
+				}
+			],
+			labelColor: "#23AE89",
+			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+		});
 
 
 		Morris.Bar({
 			element: "barChart",
-			data: data,
-			xkey: "y",
-			ykeys: ["a", "b"],
+			data: data3,
+			xkey: "age",
+			ykeys: ["person"],
 			barColors: ["#95D7BB", "#79D1CF"],
-			labels: ["총 방문자", "총 가입자"]
+			labels: ["인원"]
 		});
 
 		Morris.Bar({
@@ -436,18 +674,64 @@ $(function () {
 			xkey: "day",
 			ykeys: ["visit","join"],
 			barColors: ["#D9DD81", "#79D1CF"],
-			labels: ["방문자"," 가입자"]
+			labels: ["접속자"," 가입자"]
 		});
 
 		Morris.Bar({
 			element: "barChart3",
 			data: data,
-			xkey: "y",
-			ykeys: ["a", "b"],
+			xkey: "month",
+			ykeys: ["visit", "join","avg_visit","avg_join"],
 			barColors: ["#E67A77", "#79D1CF"],
-			labels: ["방문자 평균", "가입자 평균"]
+			labels: ["총 접속자", "총 가입자","평균 접속자","평균 가입자"]
+		});
+		Morris.Bar({
+			element: "barChart4",
+			data: data4,
+			xkey: "item",
+			ykeys: ["quantity"],
+			barColors: ["#E67A77", "#79D1CF"],
+			labels: ["갯수"]
 		});
 
+		// Morris.Area({
+		// 	element: 'areaChart',
+		// 	data:[
+		// 		{
+		// 		y:"2020-1",
+		// 		확진자:1000,
+		// 		사망자:2000,
+		// 		완치자:3000
+		// 	},
+		// 	{
+		// 		y:"2020-2",
+		// 		확진자:1000,
+		// 		사망자:2000,
+		// 		완치자:3000
+		// 	},
+		// 	{
+		// 		y:"2020-3",
+		// 		확진자:1000,
+		// 		사망자:2000,
+		// 		완치자:3000
+		// 	},
+		// 	{
+		// 		y:"2020-4",
+		// 		확진자:1000,
+		// 		사망자:2000,
+		// 		완치자:3000
+		// 	},
+		// 	{
+		// 		y:"2020-5",
+		// 		확진자:1000,
+		// 		사망자:2000,
+		// 		완치자:3000
+		// 	},
+		// ],
+		// xkey: 'y',
+		// ykeys:['확진자','사망자','완치자'],
+		// labels:['확진자','사망자','완치자']
+		// });
 		Morris.Area({
 			element: "areaChart",
 			padding: 10,
@@ -456,72 +740,11 @@ $(function () {
 			gridLineColor: "#dddddd",
 			axes: true,
 			fillOpacity: 0.7,
-			data: [
-				{
-					period: "2010 Q1",
-					iphone: 10,
-					ipad: 10,
-					itouch: 10
-				},
-				{
-					period: "2010 Q2",
-					iphone: 1778,
-					ipad: 7294,
-					itouch: 18441
-				},
-				{
-					period: "2010 Q3",
-					iphone: 4912,
-					ipad: 12969,
-					itouch: 3501
-				},
-				{
-					period: "2010 Q4",
-					iphone: 3767,
-					ipad: 3597,
-					itouch: 5689
-				},
-				{
-					period: "2011 Q1",
-					iphone: 6810,
-					ipad: 1914,
-					itouch: 2293
-				},
-				{
-					period: "2011 Q2",
-					iphone: 5670,
-					ipad: 4293,
-					itouch: 1881
-				},
-				{
-					period: "2011 Q3",
-					iphone: 4820,
-					ipad: 3795,
-					itouch: 1588
-				},
-				{
-					period: "2011 Q4",
-					iphone: 25073,
-					ipad: 5967,
-					itouch: 5175
-				},
-				{
-					period: "2012 Q1",
-					iphone: 10687,
-					ipad: 34460,
-					itouch: 22028
-				},
-				{
-					period: "2012 Q2",
-					iphone: 1000,
-					ipad: 5713,
-					itouch: 1791
-				}
-			],
-			lineColors: ["#ED5D5D", "#D6D23A", "#32D2C9"],
+			data:data5,
+			lineColors: ["#D6D23A", "#ED5D5D", "#32D2C9"],
 			xkey: "period",
-			ykeys: ["iphone", "ipad", "itouch"],
-			labels: ["iPhone", "iPad", "iPod Touch"],
+			ykeys: ["coronic", "dead", "fl_rec"],
+			labels: ["확진자", "사망자", "완치자"],
 			pointSize: 0,
 			lineWidth: 0,
 			hideHover: "auto"
