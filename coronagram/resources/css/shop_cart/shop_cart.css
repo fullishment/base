@@ -40,10 +40,14 @@
     justify-content: space-between;
 }
 
+
+
 .check_all{
     height: 20px;
-    margin: 5px; 
+    margin: 5px;
 }
+
+
 
 .seldel_btn{
     height: 30px;
