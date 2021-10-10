@@ -150,7 +150,9 @@ body{
     opacity: .8;
 }
 
-
+textarea:focus{
+    outline: 2px solid #64d488;
+}
 
 .cancel_btn:hover{
     opacity: .8;

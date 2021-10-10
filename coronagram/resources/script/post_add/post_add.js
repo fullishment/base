@@ -1,16 +1,3 @@
-$('.DOC_TEXT').keyup(function (e){
-    var content = $(this).val();
-    $('#counter').html("("+content.length+" / 최대 200자)");    //글자수 실시간 카운팅
-
-    if (content.length > 200){
-        alert("최대 200자까지 입력 가능합니다.");
-        $(this).val(content.substring(0, 200));
-        $('#counter').html("(200 / 최대 200자)");
-    }
-});
-
-
-출처: https://kunoo.tistory.com/entry/javascript-textarea-글자수-체크-카운팅 [Kunoo]
 var fileInput  = document.querySelector( "#id_photo" ),
             button     = document.querySelector( ".input-file-trigger" ),
             the_return = document.querySelector(".file-return");
