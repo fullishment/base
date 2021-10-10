@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/qna/menu_bar.css">
     <link rel="stylesheet" href="../../resources/css/qna/qna.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </head>
 <body>
@@ -71,20 +73,20 @@
         <div class="sc" id="sc">
             <div class="scHead" id="scHead">
                 <div class="scName1" id="scName1">
-                    <h4>고객 센터</h4>
+                    <h4><p>고객센터</p></h4>
                 </div>
                 <div class="scName2" id="scTitle2">
-                    <h2>Q&A 게시판</h2>
+                    <h2><p>Q&A 게시판</p></h2>
                 </div>
             </div>
             <div class="sc-wrap">
                 <div class="sc-html">
-                    <input id="tab-1" type="radio" name="tab" class="scm1" checked><label for="tab-1" class="tab">FAQ</label>
-                    <input id="tab-2" type="radio" name="tab" class="scm2"><label for="tab-2" class="tab">Q&A</label>
-                    <input id="tab-3" type="radio" name="tab" class="scm3"><label for="tab-3" class="tab">문의내역</label>
+                    <input id="tab-1" type="radio" name="tab" class="scm1" checked><label for="tab-1" class="tab"><p>FAQ</p></label>
+                    <input id="tab-2" type="radio" name="tab" class="scm2"><label for="tab-2" class="tab"><p>Q&A</p></label>
+                    <input id="tab-3" type="radio" name="tab" class="scm3"><label for="tab-3" class="tab"><p>문의내역</p></label>
                     <div class="sc-form">
                         <div class="scm1-htm">
-                            <label for="user" class="sclabel">자주 묻는 질문</label>
+                            <label for="user" class="sclabel"><p>자주 묻는 질문</p></label>
                             <div class="group">
                                 <div class="scImg"></div>
                                 <div class="scMain" id="scMain">
@@ -113,20 +115,24 @@
                                     <div class="scA">
                                         <p>A. 나도 몰라요</p>
                                     </div>
+                                    <button class="scQ">Q. 왜이리 어렵나요</button>
+                                    <div class="scA">
+                                        <p>A. 나도 몰라요</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="scm2-htm">
-                            <label for="user" class="sclabel">1:1문의하기</label>
+                            <label for="user" class="sclabel"><p>1:1문의하기</p></label>
                             <div class="group">
                                 <div class="qnaMain">
                                     <div class="QnaTitle">
-                                        <p>제목</p><textarea class="QTI" placeholder="제목을 입력하세요"></textarea>
+                                        <p>제목</p><input class="QTI">
                                     </div>
                                 </div>
                                 <div class="qnaMain">
                                     <div class="QnaCon">
-                                        <p>내용</p><textarea class="QCI" placeholder="내용을 입력하세요"></textarea>
+                                        <p>내용</p><textarea class="QCI"></textarea>
                                     </div>
                                     <div class="qnaBtn">
                                         <button href="#" type="button" class="add_btn">작성</button>
@@ -136,16 +142,16 @@
                             </div>
                         </div>
                         <div class="scm3-htm">
-                            <label for="user" class="sclabel">문의내역</label>
+                            <label for="user" class="sclabel"><p>문의내역</p></label>
                             <div class="group">
                                 <div class="qnaList">
                                     <table class="scmL" border="1">
                                         <thead class="scmLT">
                                             <tr>
-                                                <th>번호</th>
-                                                <th>제목</th>
-                                                <th>등록일</th>
-                                                <th>현황</th>
+                                                <th><p>번호</p></th>
+                                                <th><p>제목</p></th>
+                                                <th><p>등록일</p></th>
+                                                <th><p>현황</p></th>
                                             </tr>
                                         </thead>
                                         <tbody></tbody>

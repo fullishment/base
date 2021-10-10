@@ -21,7 +21,10 @@
             border-radius: 7px;
             background: #0d6efd;
         }
-    
+        .add_btn:hover {
+            opacity: .8;
+        }
+
         .edit_btn {
             display: inline-block;
             color: white;
@@ -36,6 +39,10 @@
             border-radius: 7px;
             background: #64d488;
         }
+        .edit_btn:hover {
+            opacity: .8;
+        }
+
         .del_btn {
             display: inline-block;
             color: white;
@@ -49,6 +56,9 @@
             border: none;
             border-radius: 7px;
             background: #dc3545;
+        }
+        .del_btn:hover {
+            opacity: .8;
         }
 
         .cancel_btn {
@@ -65,16 +75,25 @@
             border-radius: 7px;
             background: gray;
         }
-        .add_btn:hover{
-            opacity: .8;
-        }
-        .edit_btn:hover {
-            opacity: .8;
-        }
-        .del_btn:hover{
-            opacity: .8;
-        }
         .cancel_btn:hover {
+            opacity: .8;
+        }
+
+        .find_btn {
+            display: inline-block;
+            color: black;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: #ffc107;
+        }
+        .find_btn:hover {
             opacity: .8;
         }
     </style>
@@ -85,6 +104,7 @@
     <button href="#" type="button" class="edit_btn">수정</button>
     <button href="#" type="button" class="del_btn">삭제</button>
     <button href="#" type="button" class="cancel_btn">취소</button>
+    <button href="#" type="button" class="find_btn">찾기</button>
 </body>
 
 </html>

@@ -1,5 +1,9 @@
 
 /* main */
+main{
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
 .sc {
     max-width: 800px;
     margin: auto;
@@ -23,13 +27,13 @@ left:0;
 right:0;
 bottom:0;
 position:absolute;
-transform:rotateY(180deg); /*다른창 가림*/
+transform:rotateY(180deg); /* 다른창 가림*/
 backface-visibility:hidden; /*다른창 가림*/
 /* transition:all .4s linear; 빙글도는액션 */
 }
 .sc-html .scm1,
 .sc-html .scm2,
-.sc-form .group .check{
+.sc-form .group :checked{
 display:none;
 }
 
@@ -64,47 +68,46 @@ transform:rotate(0);
 .sc-html .scm2:checked  + .tab + .sc-form .scm2-htm{
 transform:rotate(0);
 }
-.scm {
-    margin-top: 30px;
-    margin-left: 20px;
-}
 
 
 .group {
-    border: 1px solid black;
     padding: 20px;
     margin-top: 10px;
     min-height: 400px;
     min-width: 800px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
-.scMain {
-    width: 60%;
-}
+
 
 /* Q&A */
 
 .QnaTitle {
-    display: inline-block;
-}
-.QnaTitle2{
+    /* display: inline-block; */
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    justify-content: space-between;
 }
-.QTI, .QCI{
+
+.QnaTitle input {
+    margin-left: 10px;
+}
+
+.dbox {
+    margin-left: 10px;
+}
+
+
+.QCI{
     width: 100%;
+    height: 250px;
     border: 1px solid rgb(148, 145, 145);
 }
-.QTI {
-    height: 30px;
-    width: 300px;
-}
+
+
+
 textarea {
     resize: none;
 }
-.QCI{
-    height: 250px;
-}
+
 
 /* 작성버튼 */
 .qnaBtn1 {
@@ -125,6 +128,10 @@ textarea {
             margin: 10px;
 }
 
+.qnaBtn1:hover{
+    opacity: .8;
+  }
+
 /* 취소버튼 */
 .qnaBtn2 {
     display: inline-block;
@@ -143,7 +150,9 @@ textarea {
     float: right;
     margin: 10px;
 }
-
+.qnaBtn2:hover{
+    opacity: .8;
+  }
 
 
 /* 반응형 */
