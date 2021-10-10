@@ -176,17 +176,17 @@ body {
 /* 버튼 */
 .search_btn {
   display: inline-block;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  transition: 0.5s;
-  cursor: pointer;
-  width: 60px;
-  height: 30px;
-  border: none;
-  border-radius: 7px;
-  background: #0d6efd;
+            color: black;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: #ffc107;
 }
 
 .search_btn:hover {
@@ -195,17 +195,17 @@ body {
 
 .cancel_btn {
   display: inline-block;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  transition: 0.5s;
-  cursor: pointer;
-  width: 70px;
-  height: 30px;
-  border: none;
-  border-radius: 7px;
-  background: gray;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: 0.5s;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: 7px;
+            background: gray;
 }
 
 .cancel_btn:hover {

@@ -10,14 +10,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Open Sans", sans-serif;
   color: #333333;
   height: 100%;
 }
 
 .box-form {
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
+  height: 70%;
   background: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
@@ -26,9 +26,9 @@ body {
   align-items: stretch;
   box-shadow: 0 0 20px 6px #090b6f85;
   position: relative;
-  top:50px;
+  top:100px;
 }
-
+/* 
 @media (max-width: 980px) {
   .box-form {
     flex-flow: wrap;
@@ -36,11 +36,11 @@ body {
     align-content: center;
     align-items: center;
   }
-}
+} */
 
-.box-form div {
+/* .box-form div {
   height: auto;
-}
+} */
 
 .box-form .left {
   color: #FFFFFF;
@@ -63,13 +63,8 @@ body {
   font-size: 3vmax;
   line-height: 1;
   font-weight: 900;
-  margin-top: 160px;
-  margin-bottom: 20px;
-}
-
-.box-form .left .overlay span p {
-  margin-top: 30px;
-  font-weight: 900;
+  /* margin-top: 100px;
+  margin-bottom: 20px; */
 }
 
 
@@ -80,15 +75,10 @@ body {
 
 .box-form .right {
   padding: 40px;
-  overflow: hidden;
-  
+  /* overflow: hidden;
+  width: 30%; */
 }
 
-@media (max-width: 980px) {
-  .box-form .right {
-    width: 100%;
-  }
-}
 
 .box-form .right .title {
   font-size: 6vmax;
@@ -104,15 +94,27 @@ body {
   overflow: hidden;
 }
 
-.box-form .right input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 25px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #B0B3B9;
+.title_Name{
+  margin-top: 10px;
 }
+
+.inputs input {
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 15px;
+  display: inline-block;
+  border: 2px solid #b7b7b7;
+  padding: 5px 5px 5px 10px;
+  font-size: 18px;
+  transition: 0.2s;
+  size:30;
+  overflow: auto;
+}
+.box-form .right input:focus{
+  outline: none;
+  border: 2px solid #64d488;
+}
+
 
 .box-form .right .find_idpass {
   display: flex;
@@ -178,6 +180,12 @@ label:hover::before .text-checkbox {
 }
 
 /* 버튼 */
+.btn_con{
+  display: flex;
+  justify-content:space-around;
+}
+
+
 .join_btn{
     display: inline-block;
     color: white;
@@ -190,7 +198,7 @@ label:hover::before .text-checkbox {
     height: 30px;
     border: none;
     border-radius: 7px;
-    background: #0d6efd;
+    background: #64d488;
 }
 .join_btn:hover{
     opacity: .8;
@@ -212,3 +220,10 @@ label:hover::before .text-checkbox {
 .login_btn:hover{
     opacity: .8;
 }
+
+
+/* 반응형 */
+/* @media (max-width: 770px) {
+  
+ 
+} */

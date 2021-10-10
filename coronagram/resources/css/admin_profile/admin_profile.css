@@ -10,7 +10,7 @@ body{
 
 .card{
   width: 500px;
-  height: 1000px;
+  height: 1050px;
   padding: 15px;
   /* margin-top: 56px; */
   border-radius: 25px;
@@ -29,7 +29,6 @@ body{
   -webkit-animation: open .5s;
   animation: open .5s;
   font-family: "Noto Sans KR", sans-serif;
-  
 }
 .input_area{
   margin-left:70px;
@@ -126,9 +125,16 @@ p{
     width: 57%;
 }
 
+.point_con{
+  height: 35px;
+  width: 75%;
+}
+
+
 /* 회원등급 */
 .user_tier{
-  width: 60%;
+  height: 35px;
+  width: 79%;
   border-radius: 15px;
   border: 2px solid #b7b7b7;
   padding: 5px 5px 5px 10px;

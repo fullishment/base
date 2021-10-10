@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>CodePen - Responsive Login Form</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="../../resources/css/login/login.css">
@@ -27,21 +28,23 @@
       <p class="r_title">Login</p>
       <form action="#" method="post">
       <div class="inputs">
-        <input type="text" placeholder="user name">
-        <br>
-        <input type="password" placeholder="password">
-        <br>
+        <span class="title_Name">아이디</span><br>
+        <input type="text" placeholder="아이디를 입력하세요"><br>
+        <span class="title_Name">패스워드</span><br>
+        <input type="password" placeholder="패스워드를 입력하세요"><br>
       </div>
     </form>
       <br><br>
 
       <div class="find_idpass">
         <!-- Angular -->
-        <a href="" >forget id,password?</a>
+        <a href="" ></a>
       </div>
       <br>
-      <button class="join_btn">가입</button>
-      <button class="login_btn">로그인</button>
+      <div class="btn_con">
+        <button class="join_btn">가입</button>
+        <button class="login_btn">로그인</button>
+      </div>
     </div>
 
   </div>
