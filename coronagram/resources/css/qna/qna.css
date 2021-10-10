@@ -1,13 +1,17 @@
 /* Q&A */
         .QTI, .QCI{
             width: 95%;
-            border: 1px solid rgb(148, 145, 145);
+            border-radius: 10px;
+            border: 0px;
+            box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
         }
         .QTI {
             height: 30px;
         }
         .QCI{
             height: 250px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .qnaBtn {
             float: right;
@@ -25,20 +29,6 @@
             border: none;
             border-radius: 7px;
             background: #0d6efd;
-        }
-        .cancel_btn {
-            display: inline-block;
-            color: white;
-            font-size: 1rem;
-            font-weight: 600;
-            text-align: center;
-            transition: 0.5s;
-            cursor: pointer;
-            width: 60px;
-            height: 30px;
-            border: none;
-            border-radius: 7px;
-            background: gray;
         }
         .add_btn:hover{
             opacity: .8;
@@ -93,12 +83,39 @@
             width: 350px;
             height: 320px;
         }
-        .scmL2T {
-            width: 313px;
-            margin-left: 15px;
+        .scmL3T{
+            width: 380px;
+            height: 310px;
+            border: 0px;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+            font-size: 11pt;
+            margin-bottom: 10px;
+            margin-top:10px;
         }
-        textarea {
-            margin-left: 15px;
+        .scmL2T {
+            width: 315px;
+            height: 25px;
+            border: 0px;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+            font-size: 11pt;
+            margin-top:10px;
+        }
+        .scmL4{
+            width: 315px;
+            height: 250px;
+            border: 0px;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+            font-size: 11pt;
+            margin-top:10px;
+        }
+        input:focus{
+            outline : 2px solid #64d488;
+        }
+        textarea:focus {
+            outline : 2px solid #64d488;
         }
         .AsCon {
             margin-top: 30px;
