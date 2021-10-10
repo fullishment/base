@@ -3060,7 +3060,7 @@ format('svg')
 
  
  .col-md-6{
-     width:50%
+     width:100%
     }
 
  
@@ -3340,6 +3340,9 @@ format('svg')
     }
     
     }
+.member_grade{
+    width: 50%;
+}
      @media (min-width:1200px){
 
      .col-lg-1,
