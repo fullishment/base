@@ -456,7 +456,7 @@ a:active {
 .vaccine{
   display: inline-block;
   margin-top: 25px;
-  margin-left: 39.5vw;
+  margin-left: 44.5vw;
 }
 .vaccine_name{
   display: flex;
@@ -511,6 +511,58 @@ font-size: 12px;
   margin-top: 5px;
   margin-left: 5px;
 }
+.corona_condition{
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 45.5vw;
+}
+.condition{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left:5%;
+}
+.coronic, .fl_rec, .dead{
+ display: inherit;
+ margin: auto;
+
+}
+.condition p{
+  width: 150px;
+  margin: auto;
+  padding: 0;
+  font-size: 15px;
+}
+.coronic span, .fl_rec span, .dead span{
+  white-space: nowrap;
+width: auto;
+margin: auto;
+margin-top: 5px;
+margin-left:10px;
+padding: 0;
+font-size: 12px;
+}
+.coronics{
+  background-color: #D9DD81;
+  height: 15px;
+  width: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.fl_recs{
+  background-color: #79D1CF;
+  height: 15px;
+  width: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.deads{
+  background-color: #E67A77;
+  height: 15px;
+  width: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 @-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
