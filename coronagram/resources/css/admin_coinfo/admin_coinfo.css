@@ -100,7 +100,15 @@ transform:rotate(0);
     border: none;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
+select:focus{
+    outline: none;
+    border: 2px solid #64d488;
+  }
 
+input:focus{
+    outline: none;
+    border: 2px solid #64d488;
+  }
 
 .QCI{
     width: 100%;
