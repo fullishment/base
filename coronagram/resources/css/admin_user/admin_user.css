@@ -100,3 +100,7 @@ th {
     border-radius: 7px;
     background: #ffc107;
 }
+
+.search_btn:hover {
+    opacity: .8;
+}
