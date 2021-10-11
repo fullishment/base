@@ -7,6 +7,10 @@ body{
   overflow:auto; 
   
 }
+p{
+  margin:0px auto;
+}
+
 
 .card{
   width: 500px;
@@ -118,9 +122,7 @@ input:-ms-input-placeholder{
 input::placeholder{
   color: #bebebe;
 }
-p{
-  margin:0px auto;
-}
+
 .post_num{
     width: 57%;
 }
@@ -194,10 +196,11 @@ margin: 10px 0px 0px 110px;
 .edit_btn:hover{
   opacity: .8;
 }
-.cancel_btn:hover{
-  opacity: .8;
-}
+
 .find_btn:hover{
+    opacity: .8;
+  }
+.cancel_btn:hover{
     opacity: .8;
   }
 
