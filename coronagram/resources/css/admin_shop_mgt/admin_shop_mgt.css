@@ -107,7 +107,7 @@ th{
     margin: 20px;
     height: 600px;
     width: 1295px;
-    margin-left: 20%;
+    margin-left: 380px;
 }
 
 
@@ -143,4 +143,7 @@ th {
     border: none;
     border-radius: 7px;
     background: #ffc107;
+}
+.search_btn:hover{
+    opacity: .8;
 }
