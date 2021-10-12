@@ -195,16 +195,16 @@ th{
     margin-left: 15px;
 }
 .order_dtl2 {
-    min-height: 300px;
+    min-height: 320px;
 }
 .order_dtl2 li {
-    width: 60%;
+    width: 100%;
     float: left;
     margin: 10px 0;
     margin-left: 10px;
 }
 .order_dtl2 p {
-    width: 83%;
+    width: 90%;
     float: right;
 }
 
