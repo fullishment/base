@@ -128,21 +128,46 @@
 
 .up_con3{
     display: flex;
-    padding: 10% 0% 0% 0%;
     margin: 0;
     width: 20%;
     align-content: center;
+    padding-top: 30px;
 }
-.m_btn,.p_btn{
-    height: 20px;
-    width: 20%;
+
+ /* 수량증감폼 */
+ .qt, .qt-plus, .qt-minus {
+    display: block;
+    float: left;
+    height: 25px;
+    padding: 0 8px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     background-color: white;
-    border: 1px solid black;
 }
-.up_con3 input{
-    width: 35%;
-    height: 20px;
-    text-align:center;
+/* 갯수 */
+.qt {
+    width: 47px;
+    text-align: center;
+}
+/* 증감 */
+.qt-plus, .qt-minus {
+    border: 1px solid;
+    width: 28px;
+}
+.qt-plus {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.qt-minus {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+/* 증감호버 */
+.qt-plus:hover, .qt-minus:hover {
+    background: gray;
+    border-color: gray;
+    color: #fff;
+    cursor: pointer;
 }
 
 
