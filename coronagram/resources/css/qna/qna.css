@@ -1,4 +1,7 @@
 /* Q&A */
+html {
+    overflow-x: hidden;
+}
         .QTI, .QCI{
             width: 95%;
             border-radius: 10px;
