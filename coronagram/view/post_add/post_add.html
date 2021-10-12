@@ -76,43 +76,46 @@
         </div>
     </header>
 
+    <main>
+        <div id="main_container">
 
-    <div id="main_container">
-
-        <div class="post_form_container">
-            <form action="#" class="post_form">
-                <div class="title">
-                    NEW POST
-                </div>
-                <div class="preview">
-                    <div class="upload">
-                        <div class="post_btn">
-                            <div class="plus_icon">
-                                <span></span>
-                                <span></span>
+            <div class="post_form_container">
+                <form action="#" class="post_form">
+                    <div class="title">
+                        NEW POST
+                    </div>
+                    <div class="preview">
+                        <div class="upload">
+                            <div class="post_btn">
+                                <div class="plus_icon">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <p>포스트 이미지 추가</p>
+                                <canvas id="imageCanvas"></canvas>
+                                <!-- <p><img id="img_id" src="#" style="width: 300px; height: 300px; object-fit: cover" alt="thumbnail"></p> -->
                             </div>
-                            <p>포스트 이미지 추가</p>
-                            <canvas id="imageCanvas"></canvas>
-                            <!-- <p><img id="img_id" src="#" style="width: 300px; height: 300px; object-fit: cover" alt="thumbnail"></p> -->
                         </div>
                     </div>
-                </div>
-                <p>
-                    <input type="file" name="photo" id="id_photo" required="required" accept="image/jpeg,image/gif,image/png" onchange="chk_file_type(this)">
-                </p>
-                <p>
-                    <textarea name="content" id="text_field" cols="50" rows="5" placeholder="140자 까지 등록 가능합니다. #태그명 을 통해서 검색 태그를 등록할 수 있습니다. 예시 : I # love # insta!"></textarea>
-                </p>
-                <div class="btn_area">
-                    <input class="add_btn" type="submit" value="게시">
-                    <input class="cancel_btn" type="submit" value="취소">
-                </div>
-            </form>
+                    <p>
+                        <input type="file" name="photo" id="id_photo" required="required"
+                            accept="image/jpeg,image/gif,image/png" onchange="chk_file_type(this)">
+                    </p>
+                    <p>
+                        <textarea name="content" id="text_field" cols="50" rows="5"
+                            placeholder="140자 까지 등록 가능합니다. #태그명 을 통해서 검색 태그를 등록할 수 있습니다. 예시 : I # love # insta!"></textarea>
+                    </p>
+                    <div class="btn_area">
+                        <input class="add_btn" type="submit" value="게시">
+                        <input class="cancel_btn" type="submit" value="취소">
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-    </section>
+    
     <script src="../../resources/script/menu_bar/menu_bar.js"></script>
     <script src="../../resources/script/post_add/post_add.js"></script>
+</main>
 </body>
 
 </html>

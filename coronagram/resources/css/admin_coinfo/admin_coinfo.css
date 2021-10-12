@@ -1,11 +1,15 @@
-
+html{
+    background: #ecf0f1;
+}
 /* main */
 main{
     font-family: 'Noto Sans KR', sans-serif;
-
 }
 p {
     font-family: "Noto Sans KR", sans-serif;
+}
+input,select,textarea{
+    border-radius: 15px;
 }
 .sc {
     max-width: 800px;
@@ -13,6 +17,8 @@ p {
     margin-top: 5%;
     background: white;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
 .scHead {
     padding-bottom: 10px;
@@ -78,6 +84,9 @@ transform:rotate(0);
     min-height: 400px;
     min-width: 800px;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    background: white;
+    margin-left: -10px;
+    border-radius: 10px;
 }
 
 
@@ -109,8 +118,14 @@ input:focus{
     outline: none;
     border: 2px solid #64d488;
   }
+  textarea:focus{
+    outline: none;
+    border: 2px solid #64d488;
+  }
+
 
 .QCI{
+    padding: 10px;
     width: 100%;
     height: 250px;
     border: 0px;
@@ -144,7 +159,7 @@ textarea {
             background: #0d6efd;
             /* 추가 */
             float: right;
-            margin: 10px;
+            margin-top: 10px;
 }
 
 .qnaBtn1:hover{
@@ -167,6 +182,7 @@ textarea {
     background: gray;
     /* 추가 */
     float: right;
+    margin-left: 10px;
     margin: 10px;
 }
 .qnaBtn2:hover{

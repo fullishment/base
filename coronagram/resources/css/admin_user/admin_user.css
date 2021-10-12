@@ -1,3 +1,7 @@
+html{
+    background: #ecf0f1;
+}
+
 main {
     font-family: "Noto Sans KR", sans-serif;
 }
@@ -11,8 +15,8 @@ select {
     height: 30px;
     border: none;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-    
-}
+    border-radius: 10px;
+}   
 
 .border{
     border: none;
@@ -56,6 +60,8 @@ input:focus{
     height: 400px;
     width: 1295px;
     margin-left: 20%;
+    background: white;
+    border-radius: 15px;
 }
 
 
