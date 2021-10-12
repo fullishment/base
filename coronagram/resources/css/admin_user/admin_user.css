@@ -1,14 +1,6 @@
 main {
     font-family: "Noto Sans KR", sans-serif;
 }
-/* #adm_page:before {
-    content: "";
-    background-image: url("../../images/user.png");
-    background-size: 30px 30px;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-} */
 
 #adm_page {
     margin-left: 20%;
@@ -20,6 +12,11 @@ select {
     border: none;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     
+}
+
+.border{
+    border: none;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
 input{
     height: 30px;
@@ -50,10 +47,6 @@ input:focus{
 
 
 
-.border{
-    border: none;
-    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-}
 
 /* 표 */
 .side_box {

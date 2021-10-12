@@ -2,6 +2,12 @@ body{
     background-color: white;
     font-family: "Noto Sans KR", sans-serif;
 }
+
+.post_form_container{
+    max-width: 550px;
+    margin: 0 auto;
+}
+
 #imageCanvas{
     position: absolute;
     left: 0;
@@ -9,16 +15,12 @@ body{
     pointer-events:none;
 }
 
-#img_id{
+/* #img_id{
     position: absolute;
     left: 0;
     top: 0;
-}
+} */
 
-.post_form_container{
-    max-width: 550px;
-    margin: 0 auto;
-}
 
 
 .post_form{

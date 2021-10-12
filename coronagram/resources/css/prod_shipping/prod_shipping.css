@@ -1,10 +1,60 @@
 
 html{
     overflow-x: hidden;
+    background: #ecf0f1;
 }
 main {
     font-family: "Noto Sans KR", sans-serif;
 }
+body {
+    font-size: 12px;
+  }
+  
+  .bc {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    width: 1300px;
+    max-width: 76%;
+    height: 100px;
+    margin-left: 11%;
+    counter-reset: breadcrumb;
+    position: relative;
+  }
+  
+  .bc:before {
+    position: absolute;
+    top: 23px;
+    left: 10%;
+    content: '';
+    width: 80%;
+    height: 1px;
+    background: black;
+  }
+  
+  .bc .bc_item {
+    float: left;
+    padding-top: 60px;
+    width: 20%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .bc .bc_item:after {
+    counter-increment: breadcrumb;
+    content: counter(breadcrumb);
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 23px);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 50%;
+    line-height: 40px;
+    background: white;
+  }
+  
 select{
     border-radius: 10px;
     border:0px;
@@ -28,7 +78,6 @@ th{
     font-weight: 500;
     font-size: 12px;
     color: black;
-    text-transform: uppercase;
     background-color: rgba(255,255,255,0.3);
   }
   td{
@@ -43,12 +92,27 @@ th{
   .shop_mgt_nav2{
       display: flex;
   }
-  .cancel_dt{
+  .order_list{
     flex:1;
+    float : right;
   }
+  .btn {
+      border: none;
+  }
+  .btn p {
+            display: block;
+            background: black;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            font: bold 80% Verdana;
+            font-weight: 500;
+            border-radius: 50px;
+            padding: 6% 6%;
+            width: 70px;
+        }
   .cancel_box{
     flex:1.5;
-    padding-left: 180px;
   }
 #adm_page:before {
     content: "";
@@ -60,8 +124,14 @@ th{
 }
 
 #adm_page {
-    margin-left: 380px;
-    margin-top: 50px;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.gbn {
+    width : 95%;
+    border : 1px solid black;
+    margin: 20px 25px;
+    background: black;
 }
 .cancel_select{
     margin-left:30px;
@@ -87,32 +157,61 @@ th{
 .shop_mgt_title{
     flex:1;
     width: 100%;
-    padding-left: 380px;
+    padding-left: 20%;
+    padding-right: 8%;
 }
 .top_text {
-    padding-left: 380px;
+    width: 100%;
+    padding-left: 20%;
+    padding: 1%;
+    margin-left: 10%;
 }
 
 .search_box {
     position: absolute;
-    padding-left: 970px;
+    padding-left: 50%;
+    padding-top: 2px;
 }
 
 /* 표 */
-.side_box {
+.order_box {
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    height: 600px;
-    width: 1295px;
-    margin-left: 380px;
+    width: 80%;
+    margin-left: 10%;
+    background: white;
 }
 
+.order_dtl1, .order_dtl2 {
+    background: #ecf0f1;
+    padding: 35px;
+    border-radius: 20px;
+    width: 94%;
+    margin-left: 1%;
+}
+.order_box ul {
+    margin-left: 15px;
+}
+.order_dtl2 {
+    min-height: 320px;
+}
+.order_dtl2 li {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+.order_dtl2 p {
+    width: 90%;
+    float: right;
+}
 
 .user_box {
     border: solid 1px grey;
     height: 300px;
-    width: 1185px;
+    width: 94%;
     text-align: center;
     border-collapse: collapse;
     padding: 0;
@@ -141,7 +240,4 @@ th {
     border: none;
     border-radius: 7px;
     background: #ffc107;
-}
-.search_btn:hover{
-    opacity: .8;
 }
