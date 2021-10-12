@@ -355,6 +355,46 @@ $(function () {
 		{
 			item: "name",
 			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
+		},	
+		{
+			item: "name",
+			quantity: 200
 		}
 	];
 	var data5 =  [
@@ -691,7 +731,7 @@ $(function () {
 			xkey: "item",
 			ykeys: ["quantity"],
 			barColors: ["#E67A77", "#79D1CF"],
-			labels: ["갯수"]
+			labels: ["수량"]
 		});
 
 		// Morris.Area({
