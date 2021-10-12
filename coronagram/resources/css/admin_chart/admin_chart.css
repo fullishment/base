@@ -8,8 +8,8 @@ body {
   line-height: normal;
   font-size: 16px;
   overflow-Y: scroll;
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased !important;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 a, a:hover, a:visited, a:link, a:active {
@@ -45,7 +45,6 @@ a:active {
   font-size: 2em;
     margin-top: 25px;
   /* margin-left: 40%; */
-  font-family: 'Times New Roman', Times, serif;
   /* border: 1px solid black; */
   /* border-radius: 20px; */
 }
@@ -831,12 +830,14 @@ font-size: 12px;
   font-size: 1.2em;
   font-weight: 300;
   text-transform: uppercase;
+  margin-right: 5%;
 }
 
 .rad-info-box .value {
   font-size: 2.1em;
   font-weight: 600;
   margin-top: 5px;
+  margin-right: 5%;
 }
 
 .rad-list-group-item {
@@ -1057,8 +1058,11 @@ font-size: 12px;
   -webkit-transition: none;
 }
 .flat-theme .rad-info-box {
-  box-shadow: none !important;
-  border-radius: 4px;
+  box-shadow: 2px 2px 5px 2px #d7d7d7 !important;
+  border-radius: 10px;
+  margin: 10px;
+  height: 140px;
+  width: 95%;
 }
 .flat-theme .panel {
   box-shadow: none !important;
@@ -1104,6 +1108,11 @@ font-size: 12px;
 .flat-theme.crimson .rad-sidebar li:hover a > span {
   color: crimson !important;
 }
+.member_level{
+  border: 1px solid black;
+  align: center;
+}
+
 @media screen and (max-width: 850px) {
   .flat-theme.crimson.sticky .rad-toggle-btn {
     background: #fafafa !important;

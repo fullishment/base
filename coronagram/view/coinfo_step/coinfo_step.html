@@ -159,8 +159,8 @@
                                             <a class="local_link"></a>
                                         </div>
                                         <div class="local_info  local_active" id="30" style="left: 170.883331px;top: 177.435425px;">
-                                            <strong class="local_name">서울</strong>
-                                            <p class="population_number">4</p>
+                                            <strong class="local_name" style="color: green;">서울</strong>
+                                            <p class="population_number" style="color: green;">4</p>
                                             <a class="local_link"></a>
                                         </div>
                                         <div class="local_info  local_active" id="29" style="left: 90.883331px;top: 146.435425px;">
@@ -270,10 +270,12 @@
 
     <script src="../../resources/script/menu_bar/menu_bar.js"></script>
     <script>
-        $(document).ready(function(){
-            if($(".population_number").innerText=="3"){
-                $(".local_nm").css("fill","green")
-            }
+        $(document).on('click', '.local_link', function(e){
+            e.preventDefault();  
+            $(this).css('background-color', 'rgba(0,0,0,0.4)');
+            $(this).css('color', 'white');
+            $(".local_link").not($(this)).css('background-color', 'rgba(255,255,255,0.8)');
+            $(".local_link").not($(this)).css('color', 'black');
         });
     </script>
 </body>
