@@ -676,26 +676,26 @@ $(function () {
 			element: "donutChart6",
 			data: 			[
 				{
-					label:"bronze" ,value: 25
-				},
-				{
-					label:"silver" ,value: 25
-				},
-				{
-					label:"gold" ,value: 25
+					label:"diamond" ,value: 25
 				},
 				{
 					label:"platinum" ,value: 25
 				},
 				{
-					label:"diamond" ,value: 25
+					label:"gold" ,value: 25
+				},
+				{
+					label:"silver" ,value: 25
+				},
+				{
+					label:"bronze" ,value: 25
 				},
 				{
 					label:"manager" ,value: 25
 				}
 			],
 			labelColor: "#23AE89",
-			colors: ["#E67A77", "#D9DD81", "#79D1CF", "#95D7BB"]
+			colors: ["#f75353", "#f87d43", "#cafa1e", "#12e23f","#092ee6","#a859f1"]
 		});
 
 

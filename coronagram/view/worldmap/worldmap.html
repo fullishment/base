@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>COVID-19 DataViz: Dashboard</title>
+
+    <!-- amCharts includes -->
+    <script src="../../resources/script/worldmap/chart/core.js"></script>
+    <script src="../../resources/script/worldmap/chart/chart.js"></script>
+    <script src="../../resources/script/worldmap/chart/map.js"></script>
+    
+    <script src="../../resources/script/worldmap/theme/dark.js"></script>
+    <script src="../../resources/script/worldmap/theme/animated.js"></script>
+
+    <script src="../../resources/script/worldmap/geodata/worldLow.js"></script>
+    <script src="../../resources/script/worldmap/geodata/countries2.js"></script>
+
+    <!-- DataTables includes -->
+    <script src="../../resources/script/worldmap/jquery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" media="all" href="../../resources/css/worldmap/jquery.dataTables.min.css" />
+    <link rel="stylesheet" media="all" href="../../resources/css/worldmap/select.dataTables.min.css" />
+    <script src="../../resources/script/worldmap/jquery/jquery.dataTables.min.js"></script>
+    <script src="../../resources/script/worldmap/jquery/dataTables.select.min.js"></script>
+
+    <!-- Data  -->
+    <script src="../../resources/script/worldmap/timeline/world_timeline.js"></script>
+    <script src="../../resources/script/worldmap/timeline/total_timeline.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" media="all" href="../../resources/css/worldmap/dark.css" />
+
+    <!-- Main app -->
+    <script src="../../resources/script/worldmap/app.js"></script>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div id="chartdiv"></div>
+      <div id="list">
+        <table id="areas" class="compact hover order-column row-border">
+          <thead>
+            <tr>
+              <th>Country/State</th>
+              <th>Confirmed</th>
+              <th>Deaths</th>
+              <th>Recovered</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -93,6 +93,7 @@ transform:rotate(0);
     min-width: 800px;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     display: flex;
+    border-radius: 10px;
 }
 .local_info{
     position: absolute;
@@ -104,6 +105,8 @@ transform:rotate(0);
     text-align: center;
     width: 50px;
     height: 60px;
+    background-color: rgba(255, 255, 255);
+    color:black;
 }
 
 /* Q&A */
@@ -119,7 +122,9 @@ transform:rotate(0);
 .QnaTitle input {
     margin-left: 10px;
 }
-
+.step_tb{
+    
+}
 .dbox {
     margin-left: 10px;
     border: none;

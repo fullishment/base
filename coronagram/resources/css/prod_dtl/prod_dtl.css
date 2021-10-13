@@ -144,6 +144,7 @@ p {
         }
         .select_color {
             width: 100px;
+            border-radius: 10px;
         }
         .cnt_L {
             width: 30%;
