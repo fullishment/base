@@ -47,4 +47,5 @@
         .sc_content a:link, 
         .sc_content a:visited {
             color : black;
+            text-decoration: none;
         }
